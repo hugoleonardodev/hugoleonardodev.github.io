@@ -1,0 +1,51 @@
+h1 {
+    font-style: italic;
+    font-size: 500%;
+    background-color: rgba(99, 25, 168, 0.794);
+    background-size: 100%;
+    color: rgb(29, 6, 51);
+    text-align: center;
+    text-shadow: black;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 300%;
+    text-align: center;
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+    background-color: rgba(99, 25, 168, 0.794);
+}
+h4 {
+    column-count: 2;
+}
+h5 {
+    background-color: rgba(99, 25, 168, 0.794);
+}
+h6 {
+    text-align: center;
+    column-count: 2;
+    font-size: 200%;
+}
+h7 {
+    column-count: 2;
+}
+h8 {
+    border-radius: 100%;
+}
+p {
+    font-size: 200%;
+    background-color: rgba(99, 25, 168, 0.794);
+}
+body {
+    background-color: rgb(32, 42, 54);
+    text-align: center;
+}
+img {
+    border-radius: 10%;
+
+}
+.print-counter::after {
+    content: counter(myCounter)
+}
