@@ -1,0 +1,25 @@
+.full-info-container {
+  display: flex;
+}
+
+.personal-info-container {
+  width: 50%;
+}
+
+.job-info-container {
+  width: 50%;
+}
+
+.dados-pessoais {
+  display: flex;
+  width: 100%;
+}
+
+.invalid-fields {
+  color: red;
+  display: none;
+}
+
+.validation-curriculum {
+  display: none;
+}
