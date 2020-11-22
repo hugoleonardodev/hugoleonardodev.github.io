@@ -8,20 +8,37 @@ header {
   background-color: #3f3d56;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  height: 20%;
 }
+
+/* header div {
+  display: flex;
+} */
 
 header img {
-  width: 20%;
+  display: flex;
+  width: 20vw;
 }
 
-nav {
+nav div {
   display: flex;
   font-size: xxx-large;
 }
 
-img {
+section {
   display: flex;
-  width: inherit;
+  /* width: inherit;
+  height: inherit; */
+}
+
+section div {
+  display: flex;
+}
+
+section div img {
+  display: flex;
+  width: 100vw;
 }
 
 footer {
