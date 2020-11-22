@@ -1,0 +1,19 @@
+body {
+  background-color: #F2F1F0;
+  margin: 0;
+}
+
+header {
+  background-color: #3f3d56;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 30%;
+}
+
+nav {
+  display: flex;
+  font-size: xxx-large;
+}
