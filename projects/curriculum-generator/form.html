@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Curriculum</h1>
+  <form class="full-info-container">
+    <fieldset class="personal-info-container">
+      <legend>Informações pessoais</legend>
+      <legend>Nome</legend>
+      <input type="text" class="dados-pessoais" maxlength="40" required>    
+      <legend>Email</legend>
+      <input type="text" class="dados-pessoais" maxlength="50" required>
+      <legend>CPF</legend>
+      <input type="text" class="dados-pessoais" maxlength="11" required>
+      <legend>Endereço</legend>
+      <input type="text" class="dados-pessoais" maxlength="40" required>
+      <legend>Cidade</legend>
+      <input type="text" class="dados-pessoais" maxlength="28" required>
+      <legend>Estado</legend>
+      <select class="select-state" required></select>
+      <legend>Tipo</legend>
+      <input type="radio" name="home-type" id="casa" value="Casa" required>
+      <label for="casa">Casa</label>
+      <input type="radio" name="home-type" id="apto" value="Apartamento" required>
+      <label for="apto">Apartamento</label>
+    </fieldset>
+    <fieldset class="job-info-container">
+      <legend>Informações profissionais</legend>
+      <legend>Resumo do curríclo</legend>
+      <textarea class="text-area" maxlength="1000" required></textarea>
+      <legend>Cargo</legend>
+      <input type="text" maxlength="40" required>
+      <legend>Descrição do cargo</legend>
+      <textarea class="text-area" maxlength="500" required></textarea>
+      <legend>Data de início</legend>
+      <input type="date" min="2000-01-01" max="2022-12-31" required>
+    </fieldset>
+  </form>
+  <button id="generate-curriculum">Gerar Curriculum</button>
+  <div class="invalid-fields">Campos Inválidos</div>
+  <div class="validation-curriculum">Olá, John Doe</div>
+</body>
+<script src="script.js"></script>
+
+</html>
