@@ -1,0 +1,41 @@
+body {
+  background-color: #F2F1F0;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #3f3d56;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header img {
+  display: flex;
+  width: 20vh;
+}
+
+nav {
+  font-size: xx-large;
+}
+
+section {
+  display: flex;
+  height: 80vh;
+}
+
+section img {
+  display: block;
+  width: 100vw;
+}
+
+.projects-index {
+  display: none;
+  width: 100vw;
+}
+
+footer {
+  align-items: center;
+  background-color: #3f3d56;
+  display: flex;
+}
