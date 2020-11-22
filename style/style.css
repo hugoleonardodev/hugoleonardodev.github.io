@@ -4,16 +4,28 @@ body {
 }
 
 header {
+  align-items: center;
   background-color: #3f3d56;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 header img {
-  width: 30%;
+  width: 20%;
 }
 
 nav {
   display: flex;
   font-size: xxx-large;
+}
+
+img {
+  display: flex;
+  width: inherit;
+}
+
+footer {
+  align-items: center;
+  background-color: #3f3d56;
+  display: flex;
 }
