@@ -8,12 +8,7 @@ header {
   background-color: #3f3d56;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
 }
-
-/* header div {
-  display: flex;
-} */
 
 header img {
   display: flex;
@@ -29,12 +24,13 @@ section {
   height: 80vh;
 }
 
-section div {
-  display: flex;
-}
-
 section img {
   display: block;
+  width: 100vw;
+}
+
+.projects-index {
+  display: none;
   width: 100vw;
 }
 
