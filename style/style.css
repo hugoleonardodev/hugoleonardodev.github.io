@@ -29,6 +29,14 @@ section img {
   width: 100vw;
 }
 
+.main-content {
+  
+}
+
+.showing-content {
+  display: none;
+}
+
 .projects-index {
   display: none;
   width: 100vw;
