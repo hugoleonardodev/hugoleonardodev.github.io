@@ -7,10 +7,9 @@ const showingContent = document.createElement('section');
 showingContent.className = 'content-container';
 
 buttonLaunch.addEventListener('click', function () {
-	alert('Hello World! My name is Hugo. If you want to know more about me, feel free to check one of projects or social medias. You can also click on Info button. Thanks for come.');
 	projectsIndex.style.display = 'none'
 	hero.style.display = 'flex'
-		// click.preventDefault();
+	alert('Hello World! My name is Hugo. If you want to know more about me, feel free to check one of projects or social medias. Thanks for visiting.');
 })
 
 buttonProjects.addEventListener('click', function () {
