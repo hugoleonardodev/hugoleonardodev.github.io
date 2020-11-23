@@ -13,7 +13,7 @@ createColorPallete(4);
 // Coloring palette boxes
 function createColorPaletteColors() {
     const colorPalette = document.querySelectorAll('.color');
-    const colorsArray = ['black', 'blue', 'green', 'yellow'];
+    const colorsArray = ['black', '#3f3d56', '#af4ef7', '#fc6060'];
 
     for (let index = 0; index < colorPalette.length; index +=1) {
         colorPalette[index].style.backgroundColor = colorsArray[index];
@@ -29,8 +29,8 @@ function createPixelBoard(number) {
 	for (let index1 = 0; index1 < number; index1 += 1) {
 		const createPixelElement = document.createElement('li');
 		createPixelElement.className = "pixel";
-        createPixelElement.style.backgroundColor = 'white';
-        createPixelElement.style.color = 'white';
+        createPixelElement.style.backgroundColor = '#e6e6e6';
+        createPixelElement.style.color = '#e6e6e6';
 		pixelBoardContainer.appendChild(createPixelElement);
 	};
 };
@@ -78,6 +78,6 @@ clearBoardButton.addEventListener('click', clearBoard);
 function clearBoard() {
 	for (let index = 0; index <pixels.length; index += 1) {
 		const pixel = pixels[index];
-		pixel.style.backgroundColor = 'white';
+		pixel.style.backgroundColor = '#e6e6e6';
 	};
 };

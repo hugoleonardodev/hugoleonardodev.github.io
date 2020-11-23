@@ -16,6 +16,20 @@ header img {
 }
 
 nav {
+  display: flex;
+  font-size: xx-large;
+  flex-wrap: wrap;
+}
+
+nav div {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: unset;
+  flex-wrap: wrap;
+}
+
+button i {
   font-size: xx-large;
 }
 
@@ -29,6 +43,10 @@ section img {
   width: 100vw;
 }
 
+.showing-content {
+  display: none;
+}
+
 .projects-index {
   display: none;
   width: 100vw;
@@ -38,4 +56,9 @@ footer {
   align-items: center;
   background-color: #3f3d56;
   display: flex;
+  justify-content: center;
+}
+
+#heart {
+  color: #fc6060
 }

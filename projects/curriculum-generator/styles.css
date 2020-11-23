@@ -1,3 +1,7 @@
+body {
+  background-color: #F2F1F0;
+}
+
 .full-info-container {
   display: flex;
 }
@@ -22,4 +26,13 @@
 
 .validation-curriculum {
   display: none;
+}
+
+.select-state {
+  width: -webkit-fill-available;
+}
+
+textarea {
+  width: -webkit-fill-available;
+  height: 50px;
 }
