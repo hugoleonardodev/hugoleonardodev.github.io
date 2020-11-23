@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Lista de Tarefas</title>
+    <link href="/fontawesome-free-5.15.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.1-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.1-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
     <header >Minha Lista de Tarefas</header>
     <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
     <input id="texto-tarefa">
     <ol id="lista-tarefas"></ol>
-    <button id="criar-tarefa">Criar Tarefa</button>
-    <button id="remover-finalizados">Remover Finalizados</button>
-    <button id="apaga-tudo">Apaga Tudo</button>
-    <script src="script.js"></script>
+    <div>
+        <button id="criar-tarefa"><i class="fas fa-list-ol"></i>Criar Tarefa</button>
+        <button id="remover-finalizados"><i class="fas fa-window-close"></i>Remover Finalizados</button>
+        <button id="apaga-tudo"><i class="fas fa-trash-alt"></i>Apagar Tudo</button>
+    </div>
+    </section>
 </body>
+<script src="script.js"></script>
 </html>
