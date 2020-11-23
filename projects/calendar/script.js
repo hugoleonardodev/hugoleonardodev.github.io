@@ -65,20 +65,20 @@ const button = document.querySelector('#btn-holiday');
 button.addEventListener("click", changeColor);
 function changeColor() {
   for (let index = 0; index < holidays.length; index += 1) {
-    if (holidays[index].style.backgroundColor === "green") {
+    if (holidays[index].style.backgroundColor === "#af4ef7") {
               holidays[index].style.backgroundColor = "rgb(238,238,238)";
               holidays[index].style.color = "#777";                
     } else {
-              holidays[index].style.backgroundColor = "green";
+              holidays[index].style.backgroundColor = "#af4ef7";
               holidays[index].style.color = "white";
     };
       };
       for (let index1 = 0; index1 < holidayFriday.length; index1 += 1) {
-          if (holidayFriday[index1].style.backgroundColor === "green") {
+          if (holidayFriday[index1].style.backgroundColor === "#af4ef7") {
               holidayFriday[index1].style.backgroundColor = "rgb(238,238,238)";
               holidayFriday[index1].style.color = "#777";
           } else {
-              holidayFriday[index1].style.backgroundColor = "green";
+              holidayFriday[index1].style.backgroundColor = "#af4ef7";
               holidayFriday[index1].style.color = "white";
           };
       };
