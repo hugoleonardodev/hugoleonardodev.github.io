@@ -6,8 +6,11 @@ body {
 header {
   align-items: center;
   background-color: #3f3d56;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,1);
   display: flex;
   justify-content: space-evenly;
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,1);
 }
 
 header img {
@@ -59,6 +62,7 @@ section img {
 footer {
   align-items: center;
   background-color: #3f3d56;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,1);
   display: flex;
   justify-content: center;
 }
