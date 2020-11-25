@@ -67,14 +67,16 @@ footer {
   justify-content: center;
 }
 
-footer i {
+footer div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer div i {
   margin-left: 10px;
 }
 
 #heart {
   color: #fc6060
-}
-
-.sample-img {
-  display: none;
 }
