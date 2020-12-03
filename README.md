@@ -2,4 +2,4 @@
 
 https://hugoleonardodev.github.io/
 
-Include some of my projects develped at Trybe. And some articles about learning skills.
+Include some of my projects developed at Trybe. And some articles about learning skills.
