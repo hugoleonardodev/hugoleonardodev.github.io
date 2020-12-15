@@ -302,15 +302,19 @@ nav ul li {
 .cart .cart__title {
   flex-basis: 1;
   font-size: 16pt;
+  font-weight: 300;
+  padding: 10px;
   text-align: center;
 }
 
 .cart__item {
   cursor: pointer;
+  padding: 10px;
 }
 
 .cart__item:hover {
   background-color: #3483FA;
+  color: #fff;
 }
 
 .currency {
@@ -319,4 +323,15 @@ nav ul li {
 
 .display {
   display: flex;
+  margin-left: 10px;
+}
+
+.empty-cart {
+  background-color: #3483FA;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: larger;
+  height: 38px;
+  margin-top: 10px;
 }
