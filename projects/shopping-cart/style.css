@@ -8,11 +8,41 @@ body {
 header {
   background-color: #fff159;
   display: flex;
+  justify-content: space-between;
   margin: 0;
+}
+
+.finance-car {
+  display: flex;
+}
+
+nav {
+  background-color: #fff159;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+nav ul li {
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .navigator {
   display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.fa-map-marker-alt {
+  font-size: xx-large;
+}
+
+.fa-car-side {
+  font-size: xx-large;
+}
+
+.fa-shopping-cart {
+  font-size: larger;
 }
 
 .top-bar {
@@ -48,14 +78,45 @@ header {
 }
 
 .item {
-  border: 2px solid blue;
+  border: 1px solid lightgray;
   border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 -1px 2px 0 rgba(0,0,0,.1);
   box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: auto;
   margin: 5px;
   width: 200px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item .item__image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.item::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.item:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.item:hover::after {
+    opacity: 1;
 }
 
 .item .item__sku {

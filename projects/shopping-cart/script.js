@@ -74,8 +74,8 @@ async function cartSumItems(id) {
       cartSumPrices = parseFloat(document.querySelector('.display').innerHTML, 10);
       cartSumPrices += price;
     });
-  document.querySelector('.display').innerHTML = cartSumPrices;
-  localStorage.setItem('cart-sum', cartSumPrices);
+  document.querySelector('.display').innerHTML = cartSumPrices.toFixed(2);
+  localStorage.setItem('cart-sum', cartSumPrices.toFixed(2));
   removeLoadingDiv();
 }
 
@@ -130,11 +130,14 @@ function createCustomElement(element, className, innerText) {
 function createProductItemElement({ sku, name, image }) {
   const section = document.createElement('section');
   section.className = 'item';
-
+  section.addEventListener('click', selectItem);
+  
   section.appendChild(createCustomElement('span', 'item__sku', sku));
   section.appendChild(createCustomElement('span', 'item__title', name));
   section.appendChild(createProductImageElement(image));
-  section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
+  section.appendChild(createCustomElement('span', 'item__sku', sku));
+  section.appendChild(createCustomElement('span', 'item__title', name));
+  // section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
 
   return section;
 }
@@ -161,7 +164,7 @@ function clearChartList() {
 }
 
 const buttonClearAll = () => {
-  const button = document.querySelector('button');
+  const button = document.querySelector('.empty-cart');
   button.addEventListener('click', clearChartList);
 };
 
