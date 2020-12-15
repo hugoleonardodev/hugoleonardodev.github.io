@@ -286,6 +286,11 @@ nav ul li {
   font-weight: bolder;
 }
 
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cart {
   display: flex;
   flex-basis: 30%;
@@ -305,5 +310,13 @@ nav ul li {
 }
 
 .cart__item:hover {
-  background-color: rgba( 43, 0, 255, 37.5% );
+  background-color: #3483FA;
+}
+
+.currency {
+  display: flex;
+}
+
+.display {
+  display: flex;
 }
