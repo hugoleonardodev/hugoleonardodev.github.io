@@ -23,26 +23,49 @@
       </form>
       <a class="finance-car" href="https://ofertas.mercadolivre.com.br/financiamento?utm_source=OS&utm_medium=BM&utm_campaign=Credits">
         <i class="fas fa-car-side"></i>
-        <p>Financie seu próximo carro aqui</p>
+        <p style="font-weight: 300;">Financie seu próximo carro aqui</p>
       </a>
     </header>
 
     <nav>
       <section class="location">
         <i class="fas fa-map-marker-alt"></i>
-        <p class="location-info">Informe seu CEP</p>
+        <p class="location-info">Envie para Hugo</p>
       </section>
       <ul class="navigator-center">
-        <li>Categorias</li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn"> Categorias <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Informática</a>
+              <a href="#">Computadores</a>
+              <a href="#">PC de Mesa</a>
+            </div>
+          </div>
+        </li>
         <li>Ofertas do dia</li>
         <li>Histórico</li>
         <li>Vender</li>
         <li>Contato</li>
       </ul>
       <ul class="navigator-right">
-        <li>Crie sua conta</li>
-        <li>Entre</li>
+        <li class="user-menu">
+          <div class="dropdown">         
+            <i class="fas fa-user-circle"></i>
+            <button class="dropbtn"> Hugo <i class="fa fa-caret-down"></i> </button>
+            <div class="dropdown-content">
+              <a href="#">LinkedIn</a>
+              <a href="#">GitHub</a>
+              <a href="#">PortfolioWeb</a>
+              <a href="#">CodePen</a>
+              <a href="#">FreeCodeCamp</a>
+              <a href="#">HackerRank</a>
+            </div>
+          </div>
+        </li>
         <li>Compras</li>
+        <li>Favoritos</li>
+        <li><i class="fas fa-bell"></i></li>
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
     </nav>
@@ -53,7 +76,8 @@
     </section>
 
     <section class="computer">
-      <p> Buscas relacionadas:
+      <p> 
+        <span style="font-weight: 300;"> Buscas relacionadas: </span>
         <span>
           <a class="search-links" href="https://lista.mercadolivre.com.br/informatica#D[A:informatica]">Informática</a>
           - <a class="search-links" href="https://lista.mercadolivre.com.br/computador#D[A:computador]">computador</a>

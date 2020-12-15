@@ -120,9 +120,6 @@ function createItemPriceCard(element, className, innerText) {
   e.innerText = `em 12x R$ ${(innerText / 12).toFixed(2)} sem juros
   
   Frete grátis`;
-  // em 12x R$ ${(innerText / 12).toFixed(2)} sem juros
-  // Frete Grátis
-  // Entrega Amanhã;
   return e;
 }
 
@@ -155,9 +152,6 @@ function createProductItemElement({ sku, name, image, price }) {
   section.appendChild(createCustomElement('span', 'item__price', price));
   section.appendChild(createItemPriceCard('span', 'price__card', price))
   section.appendChild(createCustomElement('span', 'item__title', name));
-  // section.appendChild(createCustomElement('span', 'item__sku', sku));
-  // section.appendChild(createCustomElement('span', 'item__title', name));
-  // section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
 
   return section;
 }
