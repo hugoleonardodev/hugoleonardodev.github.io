@@ -13,38 +13,53 @@
 
   <body>
     <header>
-      <img src="mercado-livre-logo.png">
-      <section class="search-bar">
-        <input type="search" placeholder="Buscar produtos, marcas e muito mais...">
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </section>
-      <section class="finance-car">
+      <a href="https://www.mercadolivre.com.br/">
+        <img src="mercado-livre-logo.png">
+      </a>
+      <form class="search-bar" action="https://www.mercadolivre.com.br/jm/search" method="GET" role="search">
+        <input type="text" class="search-input" aria-label="Digite o que você quer encontrar" name="as_word" placeholder="Buscar produtos, marcas e muito mais…" maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="3">
+        <br>
+        <button class="search-button" type="submit">|<i class="fas fa-search"></i></button>
+      </form>
+      <a class="finance-car" href="https://ofertas.mercadolivre.com.br/financiamento?utm_source=OS&utm_medium=BM&utm_campaign=Credits">
         <i class="fas fa-car-side"></i>
         <p>Financie seu próximo carro aqui</p>
-      </section>
+      </a>
     </header>
 
     <nav>
-      <section>
+      <section class="location">
         <i class="fas fa-map-marker-alt"></i>
-        <p>Informe seu CEP</p>
+        <p class="location-info">Informe seu CEP</p>
       </section>
-      <ul class="navigator">
+      <ul class="navigator-center">
         <li>Categorias</li>
         <li>Ofertas do dia</li>
         <li>Histórico</li>
+        <li>Vender</li>
         <li>Contato</li>
       </ul>
-      <ul class="navigator">
+      <ul class="navigator-right">
         <li>Crie sua conta</li>
         <li>Entre</li>
         <li>Compras</li>
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
     </nav>
+    <section class="advertisement">
+      <a href="https://ofertas.mercadolivre.com.br/mundo-gamer-intel#sellerid=00008888&banner_name=ADV_INTEL_GAMER_TSB_1">
+        <img class="ad-image" src="https://http2.mlstatic.com/resources/deals/exhibitors_resources/mlb-search-desktop-main-slider-background-image-71f7c2a4-f597-44b3-a09c-22e5f6c81e78.jpg">
+      </a>
+    </section>
 
-    <section>
-      <p>Buscas relacionadas: Informática - computador - PC de Mesa</p>
+    <section class="computer">
+      <p> Buscas relacionadas:
+        <span>
+          <a class="search-links" href="https://lista.mercadolivre.com.br/informatica#D[A:informatica]">Informática</a>
+          - <a class="search-links" href="https://lista.mercadolivre.com.br/computador#D[A:computador]">computador</a>
+          - <a class="search-links" href="https://lista.mercadolivre.com.br/pc-de-mesa#D[A:pc%20de%20mesa]">PC de Mesa</a>
+        </span>
+      </p>
     </section>
 
     <section class="container">

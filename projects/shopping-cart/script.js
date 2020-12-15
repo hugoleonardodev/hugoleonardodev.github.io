@@ -113,12 +113,30 @@ function selectItem(click) {
   click.target.classList.remove('selected');
 }
 
+
+function createItemPriceCard(element, className, innerText) {
+  const e = document.createElement(element);
+  e.className = className;
+  e.innerText = `em 12x R$ ${(innerText / 12).toFixed(2)} sem juros
+  
+  Frete grátis`;
+  // em 12x R$ ${(innerText / 12).toFixed(2)} sem juros
+  // Frete Grátis
+  // Entrega Amanhã;
+  return e;
+}
+
 function createCustomElement(element, className, innerText) {
   if (element === 'button') {
     const e = document.createElement(element);
     e.className = className;
     e.innerText = innerText;
     e.addEventListener('click', selectItem);
+    return e;
+  } else if (className === 'item__price') {
+    const e = document.createElement(element);
+    e.className = className;
+    e.innerText = `R$ ${(innerText).toFixed(2)}`;
     return e;
   }
   const e = document.createElement(element);
@@ -127,16 +145,18 @@ function createCustomElement(element, className, innerText) {
   return e;
 }
 
-function createProductItemElement({ sku, name, image }) {
+function createProductItemElement({ sku, name, image, price }) {
   const section = document.createElement('section');
   section.className = 'item';
   section.addEventListener('click', selectItem);
   
   section.appendChild(createCustomElement('span', 'item__sku', sku));
-  section.appendChild(createCustomElement('span', 'item__title', name));
   section.appendChild(createProductImageElement(image));
-  section.appendChild(createCustomElement('span', 'item__sku', sku));
+  section.appendChild(createCustomElement('span', 'item__price', price));
+  section.appendChild(createItemPriceCard('span', 'price__card', price))
   section.appendChild(createCustomElement('span', 'item__title', name));
+  // section.appendChild(createCustomElement('span', 'item__sku', sku));
+  // section.appendChild(createCustomElement('span', 'item__title', name));
   // section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
 
   return section;
@@ -151,6 +171,7 @@ async function fetchAPI(url) {
         sku: element.id,
         name: element.title,
         image: element.thumbnail,
+        price: element.price,
       };
       document.querySelector('.items').appendChild(createProductItemElement(elementObject));
     }));

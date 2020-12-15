@@ -10,15 +10,19 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 10px;
 }
 
 .finance-car {
   display: flex;
+  text-decoration: none;
+  color: black;
 }
 
 nav {
   background-color: #fff159;
   display: flex;
+  padding: 10px;
   /* justify-content: space-between; */
 }
 
@@ -27,14 +31,85 @@ nav ul li {
   /* justify-content: space-between; */
 }
 
-.navigator {
+.location {
+  align-items: center;
   display: flex;
-  width: 100vw;
-  justify-content: space-between;
+  width: 600px;
 }
 
+.location-info {
+  font-size: smaller;
+}
+
+.navigator-center {
+  display: flex;
+  width: 100vw;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+  justify-content: space-evenly;
+  font-size: small;
+  font-weight: 300;
+}
+
+.navigator-right {
+  display: flex;
+  width: 100vw;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+  justify-content: space-evenly;
+  font-size: small;
+  font-weight: 300;
+}
+
+.search-bar {
+  display: flex;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+  height: 38px;
+}
+
+.search-button {
+  background-color: #fff;
+  border: none;
+  color: #333;
+}
+
+.search-input {
+  background-color: #fff;
+  border: none;
+  display: flex;
+  width: 40vw;
+}
+
+.advertisement {
+  display: flex;
+  height: 90px;
+  width: 100vw;
+}
+
+.ad-image {
+  display: flex;
+  height: 90px;
+  width: 100vw;
+}
+
+.finance-car {
+  align-items: center;
+  display: flex;
+}
+
+.computer {
+  display: flex;
+  color: #333;
+}
+
+.search-links {
+  text-decoration: none;
+  color: #333;
+}
+
+
 .fa-map-marker-alt {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .fa-car-side {
@@ -78,6 +153,7 @@ nav ul li {
 }
 
 .item {
+  background-color: white;
   border: 1px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 -1px 2px 0 rgba(0,0,0,.1);
@@ -87,6 +163,7 @@ nav ul li {
   flex-direction: column;
   height: auto;
   margin: 5px;
+  padding: 10px;
   width: 200px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -123,14 +200,15 @@ nav ul li {
   display: none;
 }
 
-.item .item__title {
-  flex-grow: 1;
-  padding: 10px;
-  text-align: center;
-}
-
 .item .item__image {
   width: 100%;
+}
+
+.item .item__title {
+  background-color: white;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: small;
 }
 
 .item .item__add {
@@ -139,6 +217,18 @@ nav ul li {
   cursor: pointer;
   margin: 0;
   padding: 5px;
+}
+
+.item .item__price {
+  background-color: white;
+  font-weight: bolder;
+}
+
+.item .price__card {
+  background-color: white;
+  color: #00A650;
+  font-size: small;
+  font-weight: bolder;
 }
 
 .cart {
