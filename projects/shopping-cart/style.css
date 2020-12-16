@@ -289,6 +289,7 @@ nav ul li {
 .total-price {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .cart {
@@ -303,7 +304,7 @@ nav ul li {
   flex-basis: 1;
   font-size: 16pt;
   font-weight: 300;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
 }
 
@@ -326,12 +327,30 @@ nav ul li {
   margin-left: 10px;
 }
 
+.no-interest {
+  color: #00A650;
+  display: flex;
+  font-weight: 300;
+  justify-content: flex-end;
+}
+
 .empty-cart {
   background-color: #3483FA;
   border: none;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-size: larger;
   height: 38px;
   margin-top: 10px;
+}
+
+.how-to {
+  display: flex;
+  flex-direction: column;
+}
+
+.how-to span {
+  display: flex;
+  justify-content: center;
 }
