@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="/fontawesome-free-5.15.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.15.1-web/css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="https://www.mercadolivre.com.br/">
+        <img src="mercado-livre-logo.png">
+      </a>
+      <form class="search-bar" action="https://www.mercadolivre.com.br/jm/search" method="GET" role="search">
+        <input type="text" class="search-input" aria-label="Digite o que você quer encontrar" name="as_word" placeholder="Buscar produtos, marcas e muito mais…" maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="3">
+        <br>
+        <button class="search-button" type="submit">|<i class="fas fa-search"></i></button>
+      </form>
+      <a class="finance-car" href="https://ofertas.mercadolivre.com.br/financiamento?utm_source=OS&utm_medium=BM&utm_campaign=Credits">
+        <i class="fas fa-car-side"></i>
+        <p style="font-weight: 300;">Financie seu próximo carro aqui</p>
+      </a>
+    </header>
+
+    <nav>
+      <section class="location">
+        <i class="fas fa-map-marker-alt"></i>
+        <p class="location-info">Envie para Hugo</p>
+      </section>
+      <ul class="navigator-center">
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn"> Categorias <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Informática</a>
+              <a href="#">Computadores</a>
+              <a href="#">PC de Mesa</a>
+            </div>
+          </div>
+        </li>
+        <li>Ofertas do dia</li>
+        <li>Histórico</li>
+        <li>Vender</li>
+        <li>Contato</li>
+      </ul>
+      <ul class="navigator-right">
+        <li class="user-menu">
+          <div class="dropdown">         
+            <i class="fas fa-user-circle"></i>
+            <button class="dropbtn"> Hugo <i class="fa fa-caret-down"></i> </button>
+            <div class="dropdown-content">
+              <a target="_blank" href="https://www.linkedin.com/in/hugo-leonardo-matosinhos-de-souza/">LinkedIn</a>
+              <a target="_blank" href="https://github.com/hugoleonardodev">GitHub</a>
+              <a target="_blank" href="https://hugoleonardodev.github.io/">PortfolioWeb</a>
+              <a target="_blank" href="https://codepen.io/hugoleonardodev">CodePen</a>
+              <a target="_blank" href="https://www.freecodecamp.org/hugoleonardodev">FreeCodeCamp</a>
+              <a target="_blank" href="https://www.hackerrank.com/hugoleonardo_dev">HackerRank</a>
+            </div>
+          </div>
+        </li>
+        <li>Compras</li>
+        <li>Favoritos</li>
+        <li><i class="fas fa-bell"></i></li>
+        <li><i class="fas fa-shopping-cart"></i></li>
+      </ul>
+    </nav>
+    <section class="advertisement">
+      <a target="_blank" href="https://ofertas.mercadolivre.com.br/mundo-gamer-intel#sellerid=00008888&banner_name=ADV_INTEL_GAMER_TSB_1">
+        <img class="ad-image" src="https://http2.mlstatic.com/resources/deals/exhibitors_resources/mlb-search-desktop-main-slider-background-image-71f7c2a4-f597-44b3-a09c-22e5f6c81e78.jpg">
+      </a>
+    </section>
+
+    <section class="computer">
+      <p> 
+        <span style="font-weight: 300;"> Buscas relacionadas: </span>
+        <span>
+          <a class="search-links" href="https://lista.mercadolivre.com.br/informatica#D[A:informatica]">Informática</a>
+          - <a class="search-links" href="https://lista.mercadolivre.com.br/computador#D[A:computador]">computador</a>
+          - <a class="search-links" href="https://lista.mercadolivre.com.br/pc-de-mesa#D[A:pc%20de%20mesa]">PC de Mesa</a>
+        </span>
+      </p>
+    </section>
+
+    <section class="container">
+      <section class="items"></section>
+      <section class="cart">
+        <span class="cart__title">Carrinho de compras</span>
+        <section class="total-price">
+          <div>Total com frete</div>
+          <div class="currency">
+            <div>R$</div>
+            <div class="display">0.00</div>
+          </div>
+        </section>
+        <span class="no-interest">Até 12x sem juros</span>
+        <button class="empty-cart">Esvaziar carrinho</button>
+        <section class="loading-container"></section>
+        <ol class="cart__items"></ol>
+        <span class="how-to">
+          <span style="font-weight: 300;">O seu carrinho está vazio</span>
+          <span>Não sabe o que comprar? Milhões de produtos esperam por você!</span>
+          <span>Clique em algum item para selecionar. Depois se quiser revomver do carrinho, clique no item que deseja revomver. Ou clique em esvaziar carrinho.</span>
+        </span>
+      </section>
+    </section>
+  </body>
+</html>
