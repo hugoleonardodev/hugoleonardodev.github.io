@@ -1,4 +1,4 @@
-# My personal web portifolio.
+# My personal web portifolio (LEGACY).
 
 https://hugoleonardodev.github.io/
 
