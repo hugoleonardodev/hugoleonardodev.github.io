@@ -2,21 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 const getChipSize = (size: 'small' | 'medium' | 'large') => {
-    if (size === 'small') return '48px';
-    if (size === 'medium') return '72px';
-    return '128px';
+  if (size === 'small') return '48px';
+  if (size === 'medium') return '72px';
+  return '128px';
 }
 
 const getChipShape = (shape: 'flat' | 'borders' | 'rounded') => {
-    if (shape === 'flat') return '0';
-    if (shape === 'borders') return '8px';
-    return '100px';
+  if (shape === 'flat') return '0';
+  if (shape === 'borders') return '8px';
+  return '100px';
 }
 
 type TImageAvatar = {
-    hasShadow?: boolean;
-    shape: 'flat' | 'borders' | 'rounded'
-    size: 'small' | 'medium' | 'large';
+  hasShadow?: boolean;
+  shape: 'flat' | 'borders' | 'rounded'
+  size: 'small' | 'medium' | 'large';
 }
 
 const ImageAvatar = styled.img<TImageAvatar>`

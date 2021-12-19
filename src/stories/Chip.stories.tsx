@@ -10,15 +10,15 @@ export default {
 
 const Template: ComponentStory<typeof Chip> = (args) => <Chip {...args} />;
 
-export const Options = Template.bind({});
+export const Example = Template.bind({});
 
-Options.args = {
+Example.args = {
   avatar: 'https://github.com/hugoleonardodev.png',
   hasShadow: false,
   shape: 'rounded',
   size: 'large',
 };
 
-Options.parameters = {
-    jest: ['Chip.spec.tsx'],
+Example.parameters = {
+  jest: ['Chip.spec.tsx'],
 };
