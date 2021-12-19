@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Dropdown> = (args) => <Dropdown {...args} 
 
 export const Example = Template.bind({});
 
-const ContainerCentered: React.FC = ({children}) => {
+export const ContainerCentered: React.FC = ({children}) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20vh' }}>
       {children}
