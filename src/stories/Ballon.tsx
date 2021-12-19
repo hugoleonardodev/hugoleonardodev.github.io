@@ -8,7 +8,7 @@ export const TooltipWrapper = styled.div`
 `;
 
 type TTooltipTargetProps = {
-  styleMe: boolean;
+  outlined: boolean;
   showOnFocus?: boolean;
 };
 
@@ -18,8 +18,8 @@ export const TooltipTarget = styled.div<TTooltipTargetProps>`
   padding: 5px;
   margin: -1px;
   font-size: inherit;
-  ${({ styleMe }) =>
-    styleMe &&
+  ${({ outlined }) =>
+    outlined &&
     css`
       padding: 15px;
       margin: 1px;
@@ -178,12 +178,12 @@ export const TooltipBox = styled.span<ITooltipBoxProps>`
 type TBallonProps = {
   position?: 'top' | 'right' | 'bottom' | 'left';
   color?: string;
-  background: string;
-  styleMe?: boolean;
+  background?: string;
+  outlined?: boolean;
   text: string;
 };
 
-const Ballon: React.FC<TBallonProps> = ({ position = 'top', text, children, background, color = '#000', styleMe = true }) => {
+const Ballon: React.FC<TBallonProps> = ({ position = 'top', text, children, background = '#fff', color = '#000', outlined = true }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const [isFocused, setIsFocused] = React.useState(false);
   const [isClicked, setIsClicked] = React.useState(false);
@@ -204,7 +204,7 @@ const Ballon: React.FC<TBallonProps> = ({ position = 'top', text, children, back
         onBlur={() => setIsFocused(false)}
         onClick={handleClick}
         ref={targetRef}
-        styleMe={styleMe}
+        outlined={outlined}
         showOnFocus={isFocused}
       >
         {children}

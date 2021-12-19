@@ -1,62 +1,192 @@
-import { Meta } from '@storybook/addon-docs';
+<!-- Dropdown.stories.mdx -->
 
-<Meta title="Customization/Dropdown" />
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
-<style>{`
-  
-`}</style>
+import Dropdown from './Dropdown';
 
-# Custom Dropdown
+<Meta title="Stories/Dropdown" component={Dropdown} />
 
-```jsx
-import { Main, DropdownContainer, DropdownHeader, DropdownList, DropdownListContainer, ListItem, Backdrop } from './src/stories/Dropdown';
+export const Template = (args) => <Dropdown {...args } />
 
-const CustomDropdown: React.FC<TDropdownProps> = ({ // Customize default options
-    options, label, isSelect, avatar = "https://github.com/hugoleonardodev.png", shape = 'rounded', hasShadow = false
-  }) => {
-  // Customize states
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [selectedOption, setSelectedOption] = React.useState(0);
+# Dropdown
 
-  // Customize toggling
-  const toggling = () => {
-    setIsOpen(!isOpen);
-  };
 
-  // Customize onOptionClicked
-  const onOptionClicked = (value: number) => () => {
-    setSelectedOption(value);
-    setIsOpen(false);
-  };
+Has Shadow Rounded `Dropdown` component:
 
-  // Customize rendering options
-  return (
-    <Main>
-      <DropdownContainer>
-        <DropdownHeader onClick={toggling} shape={shape} hasShadow={hasShadow}>
-          {avatar && <Chip avatar={avatar} size="small"/>}
-          {isSelect ? (selectedOption || label) : label}
-          <CaretIcon />
-        </DropdownHeader>
-        {isOpen && (
-          <DropdownListContainer>
-            <DropdownList>
-              {options.map((option) => (
-                <ListItem
-                  onClick={onOptionClicked(option.value)}
-                  key={option.value}
-                >
-                  {option.label}
-                </ListItem>
-              ))}
-            </DropdownList>
-          </DropdownListContainer>
-        )}
-      </DropdownContainer>
-      <Backdrop isOpen={isOpen} onClick={toggling} />
-    </Main>
-  );
-};
+<Canvas>
+  <Story
+    name="Has Shadow Rounded Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      label: "sample dropdown",
+      isSelect: false,
+      avatar: 'https://github.com/hugoleonardodev.png',
+      hasShadow: true,
+      shape: 'rounded'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
 
-export default CustomDropdown;
-```
+Has Shadow Borders `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Has Shadow Borders Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      label: "sample dropdown",
+      isSelect: false,
+      avatar: 'https://github.com/hugoleonardodev.png',
+      hasShadow: true,
+      shape: 'borders'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Has Shadow Flat `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Has Shadow Flat Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      label: "sample dropdown",
+      isSelect: false,
+      avatar: 'https://github.com/hugoleonardodev.png',
+      hasShadow: true,
+      shape: 'flat'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Has Shadow Select Rounded `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Has Shadow Select Rounded Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      label: "sample select",
+      isSelect: true,
+      hasShadow: true,
+      shape: 'rounded'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Has Shadow Select Borders `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Has Shadow Select Borders Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      label: "sample select",
+      isSelect: true,
+      hasShadow: true,
+      shape: 'borders'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Has Shadow Select Flat `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Has Shadow Select Flat Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      label: "sample select",
+      isSelect: true,
+      hasShadow: true,
+      shape: 'flat'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Caret Only Rounded `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Caret Only Rounded Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      isSelect: true,
+      hasShadow: true,
+      shape: 'rounded'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Caret Only Borders `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Caret Only Borders Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      isSelect: true,
+      hasShadow: true,
+      shape: 'borders'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Caret Only Flat `Dropdown` component:
+
+<Canvas>
+  <Story
+    name="Caret Only Flat Dropdown"
+    args={{
+      options: [
+        { label: "one", value: 1 },
+        { label: "two", value: 2 },
+        { label: "three", value: 3 }
+      ],
+      isSelect: true,
+      hasShadow: true,
+      shape: 'flat'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

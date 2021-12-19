@@ -1,0 +1,38 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Customization/Dropdown" />
+
+<style>{`
+  
+`}</style>
+
+# Custom Dropdown
+
+```jsx
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  CardActionsContainer,
+  CardActionButton
+} from './src/stories/Card';
+
+const CustomCard: React.FC<TCardProps> = ({ image }) => {
+  return (
+    <Card image={image}>
+      <CardBody>
+        <CardTitle>Card Title</CardTitle>
+        <CardSubtitle>Card Subtitle</CardSubtitle>
+        <CardText>Lorem ipsum sorum Lorem ipsum sorum Lorem ipsum sorum Lorem ipsum sorum Lorem ipsum sorum Lorem ipsum sorum</CardText>
+        <CardActionsContainer>
+          <CardActionButton>Action</CardActionButton>
+        </CardActionsContainer>
+      </CardBody>
+    </Card>
+  );
+};
+
+export default CustomCard;
+```

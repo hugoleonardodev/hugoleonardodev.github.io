@@ -6,7 +6,7 @@ import { getShape } from "./utils";
 
 import {ReactComponent as CaretIcon} from './assets/caret.svg'
 
-export const Main = styled.div`
+export const DropdownMain = styled.div`
   font-family: sans-serif;
   background: #f0f0f0;
   cursor: pointer;
@@ -76,7 +76,7 @@ const appearFromLeft = keyframes`
   }
 `;
 
-export const ListItem = styled.li`
+export const DropdownListItem = styled.li`
   list-style: none;
   margin-bottom: 0.8em;
   animation: ${appearFromLeft} 0.2s ease-in;
@@ -86,7 +86,7 @@ type TBackDropProps = {
   isOpen: boolean;
 };
 
-export const Backdrop = styled.div<TBackDropProps>`
+export const DropdownBackdrop = styled.div<TBackDropProps>`
   height: 100%;
   width: 100%;
   left: 0;
@@ -125,7 +125,7 @@ const Dropdown: React.FC<TDropdownProps> = ({ options, label, isSelect, avatar, 
   };
 
   return (
-    <Main>
+    <DropdownMain>
       <DropdownContainer>
         <DropdownHeader onClick={toggling} shape={shape} hasShadow={hasShadow}>
           {avatar && <Chip avatar="https://github.com/hugoleonardodev.png" size="small"/>}
@@ -136,19 +136,19 @@ const Dropdown: React.FC<TDropdownProps> = ({ options, label, isSelect, avatar, 
           <DropdownListContainer>
             <DropdownList>
               {options.map((option) => (
-                <ListItem
+                <DropdownListItem
                   onClick={onOptionClicked(option.value)}
                   key={option.value}
                 >
                   {option.label}
-                </ListItem>
+                </DropdownListItem>
               ))}
             </DropdownList>
           </DropdownListContainer>
         )}
       </DropdownContainer>
-      <Backdrop isOpen={isOpen} onClick={toggling} />
-    </Main>
+      <DropdownBackdrop isOpen={isOpen} onClick={toggling} />
+    </DropdownMain>
   );
 };
 

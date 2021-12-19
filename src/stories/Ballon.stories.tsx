@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Ballon> = (args) => <Ballon {...args} />;
 
 export const Example = Template.bind({});
 
-const ContainerCentered: React.FC = ({children}) => {
+export const ContainerCentered: React.FC = ({children}) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10vh', marginBottom: '10vh' }}>
       {children}
@@ -33,7 +33,7 @@ Example.args = {
   children: 'hover or click me to show/hide tooltip',
   background: '#fff',
   color: '#000',
-  styleMe: true
+  outlined: true
 };
 
 

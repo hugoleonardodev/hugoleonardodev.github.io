@@ -1,0 +1,70 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Customization/Dropdown" />
+
+<style>{`
+  
+`}</style>
+
+# Custom Dropdown
+
+```jsx
+import {
+  DropdownMain,
+  DropdownContainer,
+  DropdownHeader,
+  DropdownList,
+  DropdownListContainer,
+  DropdownListItem,
+  DropdownBackdrop
+} from './src/stories/Dropdown';
+
+const CustomDropdown: React.FC<TDropdownProps> = ({ // Customize default options
+    options, label, isSelect, avatar = "https://github.com/hugoleonardodev.png", shape = 'rounded', hasShadow = false
+  }) => {
+  // Customize states
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [selectedOption, setSelectedOption] = React.useState(0);
+
+  // Customize toggling
+  const toggling = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Customize onOptionClicked
+  const onOptionClicked = (value: number) => () => {
+    setSelectedOption(value);
+    setIsOpen(false);
+  };
+
+  // Customize rendering options
+  return (
+    <DropdownMain>
+      <DropdownContainer>
+        <DropdownHeader onClick={toggling} shape={shape} hasShadow={hasShadow}>
+          {avatar && <Chip avatar={avatar} size="small"/>}
+          {isSelect ? (selectedOption || label) : label}
+          <CaretIcon />
+        </DropdownHeader>
+        {isOpen && (
+          <DropdownListContainer>
+            <DropdownList>
+              {options.map((option) => (
+                <DropdownListItem
+                  onClick={onOptionClicked(option.value)}
+                  key={option.value}
+                >
+                  {option.label}
+                </DropdownListItem>
+              ))}
+            </DropdownList>
+          </DropdownListContainer>
+        )}
+      </DropdownContainer>
+      <DropdownBackdrop isOpen={isOpen} onClick={toggling} />
+    </DropdownMain>
+  );
+};
+
+export default CustomDropdown;
+```
