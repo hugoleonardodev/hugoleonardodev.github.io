@@ -6,18 +6,26 @@ import Ballon from './Ballon';
 export default {
   title: 'Example/Ballon',
   component: Ballon,
-  decorators: [
-    (Story) => (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20vh' }}>
-        <Story />
-      </div>
-    ),
-  ],
 } as ComponentMeta<typeof Ballon>;
 
 const Template: ComponentStory<typeof Ballon> = (args) => <Ballon {...args} />;
 
 export const Example = Template.bind({});
+
+const ContainerCentered: React.FC = ({children}) => {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10vh', marginBottom: '10vh' }}>
+      {children}
+    </div>
+  )
+}
+
+Example.decorators = [
+  (Story) =>
+    <ContainerCentered>
+      {Story()}
+    </ContainerCentered>
+];
 
 Example.args = {
   position: 'bottom',
@@ -27,6 +35,7 @@ Example.args = {
   color: '#000',
   styleMe: true
 };
+
 
 // Options.parameters = {
 //     jest: ['Ballon.spec.tsx'],
