@@ -26,7 +26,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "test:generate-output": "react-scripts test --json --outputFile=.jest-test-results.json",
-    "deploy-storybook": "storybook-to-ghpages"
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -67,6 +68,7 @@
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
     "@storybook/storybook-deployer": "^2.8.10",
+    "gh-pages": "^3.2.3",
     "webpack": "^5.65.0"
   }
 }
