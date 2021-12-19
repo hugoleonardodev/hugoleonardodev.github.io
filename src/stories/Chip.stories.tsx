@@ -13,7 +13,12 @@ const Template: ComponentStory<typeof Chip> = (args) => <Chip {...args} />;
 export const Options = Template.bind({});
 
 Options.args = {
-  size: 'large',
   avatar: 'https://github.com/hugoleonardodev.png',
-  hasShadow: false
+  hasShadow: false,
+  shape: 'rounded',
+  size: 'large',
+};
+
+Options.parameters = {
+    jest: ['Chip.spec.tsx'],
 };
