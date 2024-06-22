@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Acre",
+    "flag": "/brazilian-states/Bandeira_do_Acre.svg.png",
+    "code": "AC",
+    "dial_code": "+55 68"
+  },
+  {
+    "name": "Alagoas",
+    "flag": "/brazilian-states/25px-Bandeira_de_Alagoas.svg.png",
+    "code": "AL",
+    "dial_code": "+55 82"
+  },
+  {
+    "name": "Amapá",
+    "flag": "/brazilian-states/Bandeira_do_Amapá.svg.png",
+    "code": "AP",
+    "dial_code": "+55 96"
+  },
+  {
+    "name": "Amazonas",
+    "flag": "/brazilian-states/Bandeira_do_Amazonas.svg.png🏴",
+    "code": "AM",
+    "dial_code": "+55 92"
+  },
+  {
+    "name": "Bahia",
+    "flag": "/public/brazilian-states/Bandeira_da_Bahia.svg.webp",
+    "code": "BA",
+    "dial_code": "+55 71"
+  },
+  {
+    "name": "Ceará",
+    "flag": "🏴",
+    "code": "CE",
+    "dial_code": "+55 85"
+  },
+  {
+    "name": "Distrito Federal",
+    "flag": "🏴",
+    "code": "DF",
+    "dial_code": "+55 61"
+  },
+  {
+    "name": "Espírito Santo",
+    "flag": "🏴",
+    "code": "ES",
+    "dial_code": "+55 27"
+  },
+  {
+    "name": "Goiás",
+    "flag": "🏴",
+    "code": "GO",
+    "dial_code": "+55 62"
+  },
+  {
+    "name": "Maranhão",
+    "flag": "🏴",
+    "code": "MA",
+    "dial_code": "+55 98"
+  },
+  {
+    "name": "Mato Grosso",
+    "flag": "🏴",
+    "code": "MT",
+    "dial_code": "+55 65"
+  },
+  {
+    "name": "Mato Grosso do Sul",
+    "flag": "🏴",
+    "code": "MS",
+    "dial_code": "+55 67"
+  },
+  {
+    "name": "Minas Gerais",
+    "flag": "🏴",
+    "code": "MG",
+    "dial_code": "+55 31"
+  },
+  {
+    "name": "Pará",
+    "flag": "🏴",
+    "code": "PA",
+    "dial_code": "+55 91"
+  },
+  {
+    "name": "Paraíba",
+    "flag": "🏴",
+    "code": "PB",
+    "dial_code": "+55 83"
+  },
+  {
+    "name": "Paraná",
+    "flag": "🏴",
+    "code": "PR",
+    "dial_code": "+55 41"
+  },
+  {
+    "name": "Pernambuco",
+    "flag": "🏴",
+    "code": "PE",
+    "dial_code": "+55 81"
+  },
+  {
+    "name": "Piauí",
+    "flag": "🏴",
+    "code": "PI",
+    "dial_code": "+55 86"
+  },
+  {
+    "name": "Rio de Janeiro",
+    "flag": "🏴",
+    "code": "RJ",
+    "dial_code": "+55 21"
+  },
+  {
+    "name": "Rio Grande do Norte",
+    "flag": "🏴",
+    "code": "RN",
+    "dial_code": "+55 84"
+  },
+  {
+    "name": "Rio Grande do Sul",
+    "flag": "🏴",
+    "code": "RS",
+    "dial_code": "+55 51"
+  },
+  {
+    "name": "Rondônia",
+    "flag": "🏴",
+    "code": "RO",
+    "dial_code": "+55 69"
+  },
+  {
+    "name": "Roraima",
+    "flag": "🏴",
+    "code": "RR",
+    "dial_code": "+55 95"
+  },
+  {
+    "name": "Santa Catarina",
+    "flag": "🏴",
+    "code": "SC",
+    "dial_code": "+55 48"
+  },
+  {
+    "name": "São Paulo",
+    "flag": "🏴",
+    "code": "SP",
+    "dial_code": "+55 11"
+  },
+  {
+    "name": "Sergipe",
+    "flag": "🏴",
+    "code": "SE",
+    "dial_code": "+55 79"
+  },
+  {
+    "name": "Tocantins",
+    "flag": "🏴",
+    "code": "TO",
+    "dial_code": "+55 63"
+  }
+]
