@@ -1,14 +1,13 @@
-import { Flowbite } from 'flowbite-react'
+import { DarkThemeToggle, Flowbite, ThemeModeScript } from 'flowbite-react'
 import React from 'react'
 import { Inter, Roboto_Mono } from 'next/font/google'
 import { type Metadata } from 'next'
-import { UserContextProvider } from '@/context/usert-context'
-// import SessionWrapper from './session-wrapper'
-import '../../app/[lang]/globals.css'
 import { type LocalesAvailable, getDictionary } from '@/functions/getDictionary'
-import HeaderMain from '@/components/organisms/header-main'
-import FooterMain from '@/components/organisms/footer-main'
-import NavigationUser from '@/components/molecules/navigation-user'
+import { MyHeader } from '@/components/header'
+
+import '../../app/[lang]/globals.css'
+import Head from 'next/head'
+import { MyFooter } from '@/components/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -135,28 +134,29 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lang: LocalesAvailable }
 }): Promise<React.JSX.Element> {
-  const { header, footer, navigationUser } = await getDictionary(params.lang) // en
+  const { navigation } = await getDictionary(params.lang) // en
 
   return (
     <Flowbite theme={customTheme}>
-      <UserContextProvider>
-        {/* <SessionWrapper> */}
-        <html lang={params.lang}>
-          {/* <Head>
+      <html lang={params.lang}>
+        <Head>
           <ThemeModeScript />
-        </Head> */}
+        </Head>
 
-          <body className={`${inter.variable} ${robotoMono.variable} `}>
-            <HeaderMain headerDictionary={header} navigationDictionary={navigationUser} />
-            <main className="flex items-start sm:items-start justify-center p-4 sm:p-8 gap-8">
-              <NavigationUser navigationDictionary={navigationUser} />
-              {children}
-            </main>
-            <FooterMain footerDictionary={footer} />
-          </body>
-        </html>
-        {/* </SessionWrapper> */}
-      </UserContextProvider>
+        <body
+          className={`${inter.variable} ${robotoMono.variable} md:px-8 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 `}
+        >
+          <MyHeader navigationDictionary={navigation} />
+          {/* <HeaderMain headerDictionary={header} navigationDictionary={navigationUser} /> */}
+          <main className="flex items-start sm:items-start justify-center p-4 sm:p-8 gap-8">
+            {/* <NavigationUser navigationDictionary={navigationUser} /> */}
+            {children}
+          </main>
+          {/* <FooterMain footerDictionary={footer} /> */}
+          <MyFooter navigationDictionary={navigation} />
+          <DarkThemeToggle />
+        </body>
+      </html>
     </Flowbite>
   )
 }

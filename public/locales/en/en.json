@@ -1,1013 +1,145 @@
 {
-  "header": {
-    "nav": {
-      "home": "Home",
-      "groups": "Groups",
-      "events": "Events",
-      "places": "Places",
-      "maps": "Maps",
-      "quickNav": "Quick Navigation",
-      "news": "News",
-      "login": "Login",
-      "register": "Register",
-      "logout": "Logout",
-      "store": "Store",
-      "blog": "Blog",
-      "about": "About",
-      "jobs": "Jobs",
-      "announcements": "Announcements",
-      "contact": "Contact"
+  "navigation": [
+    {
+      "title": "About Me",
+      "href": "#about-me"
+    },
+    {
+      "title": "Working Experiences",
+      "href": "#working-experiences"
+    },
+    {
+      "title": "Personal Projects",
+      "href": "#personal-projects"
+    },
+    {
+      "title": "Contacts",
+      "href": "#contacts"
     }
+  ],
+  "aboutMe": {
+    "id": "about-me",
+    "title": "About me",
+    "name": "Hugo Leonardo",
+    "description": "Full Stack Developer",
+    "hello": "Hello,",
+    "p1": "My name is Hugo Leonardo, and I am a Full Stack Developer from Belo Horizonte, Brazil. Since 2020, I have been working as a web developer with a strong focus on frontend development. I have led a team of three frontend developers, a tester, and a designer, where we successfully built a new product and maintained an existing one. Our work involved meticulous planning and priority setting using backlog grooming at the start of each sprint. We documented everything in Confluence and tracked tasks with Jira and Gitflow. During my tenure, we managed to eliminate all bugs in the existing application, allowing us to deliver a new student module in record time. This role greatly enhanced my project and team management skills.",
+    "p2": "For the past two years, I worked at an American company serving a client in the fiduciary sector, a complex field involving national security issues. Initially, I focused on test automation using Cypress and jQuery, which was very motivating. However, when my role shifted towards manual testing, it no longer aligned with my career aspirations as a programmer. After careful consideration, I decided to seek new opportunities.",
+    "p3": "Recently, I dedicated several months to a personal full-stack project. As a skater in my free time, I noticed the lack of a quality website for the skating community. Most available sites were either poorly designed or merely online stores. This led me to create Rollers Hub, an application aimed at connecting skaters worldwide. Developed with the support of a skater community, I continue to enhance the site with new features in my spare time.",
+    "p4": "I am currently seeking a full-stack web developer position where I can apply my skills and continue to grow professionally. I am particularly drawn to [Company Name] because [specific reason related to the company or role]. I am confident that my experience in team leadership, test automation, and full-stack development makes me a strong candidate for this position. I am excited to work with you and look forward to joining your team!",
+    "p5": "Thank you for your consideration. I look forward to the possibility of discussing how I can contribute to your team.",
+    "regards": "Best regards,",
+    "signature": "Hugo Leonardo - Full Stack Developer"
   },
-  "navigationUser": {
-    "hello": "Hello",
-    "profile": "Profile",
-    "group": "Group",
-    "event": "Event",
-    "place": "Place",
-    "dashboard": "Dashboard",
-    "settings": "Settings",
-    "logout": "Logout"
-  },
-  "loginPage": {
-    "title": "Login",
-    "description": "Login to your account",
-    "h1": "Welcome to Rollers Hub",
-    "p1": "Enter your email and password to access your account.",
-    "userEmail": {
-      "title": "Your user email",
-      "label": "Type your email here",
-      "placeholder": "user@rollershub.com",
-      "required": "Email is required",
-      "invalid": "Email must be user@email.com format"
-    },
-    "userPassword": {
-      "title": "Your password",
-      "label": "Type your password here",
-      "placeholder": "********",
-      "required": "Password is required"
-    },
-    "submitLogin": "Login",
-    "forgotPassword": "Forgot your password?",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "registerLink": {
-      "title": "Don't have an account yet?",
-      "register": "register",
-      "text": "Register here."
-    },
-    "forgotPasswordLink": {
-      "forgotPassword": "password-recovery",
-      "text": "Forgot your password?"
-    },
-    "hasError": "Incorrect email or password",
-    "tryAgainLater": "An error occurred while logging in. Please try again later."
-  },
-  "registerPage": {
-    "title": "Register",
-    "description": "Register your account",
-    "h1": "Welcome to Rollers Hub",
-    "p1": "Enter your email and password to create your account.",
-    "userName": {
-      "title": "Your user name",
-      "label": "Type your user name",
-      "placeholder": "John Doe",
-      "required": "Name is required",
-      "invalid": "Name must be at least 2 characters long"
-    },
-    "userEmail": {
-      "title": "Your user email",
-      "label": "Type a valid user email",
-      "placeholder": "user@rollershub.com",
-      "required": "Email is required",
-      "invalid": "Email must be user@email.com format"
-    },
-    "userPassword": {
-      "title": "Your password",
-      "label": "Type a strong password",
-      "placeholder": "$tr0ngP@ssw0rd",
-      "required": "Password is required"
-    },
-    "userConfirmPassword": {
-      "title": "Confirm your password",
-      "label": "Repeat your password",
-      "placeholder": "$tr0ngP@ssw0rd",
-      "required": "Password confirmation is required",
-      "invalid": "Passwords do not match"
-    },
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "termsAndConditions": "Terms and conditions",
-    "andAlso": "and also",
-    "privacyPolicy": "Privacy policy",
-    "readAndAgreed": "I have read and agreed to the:",
-    "submitRegister": "Create your free account",
-    "hasError": "Incorrect email or password",
-    "tryAgainLater": "An error occurred while logging in. Please try again later."
-  },
-  "recoveryPage": {
-    "title": "Password recovery",
-    "description": "Enter your email and we will send you a link to reset your password",
-    "h1": "Forgot your password?",
-    "p1": "Enter your email and we will send you a link to reset your password.",
-    "userEmail": {
-      "title": "Type your email",
-      "label": "Type a valid email",
-      "placeholder": "user@rollershub.com",
-      "required": "Email is required",
-      "invalid": "Email must be user@email.com format"
-    },
-    "submitRecovery": "Send recovery email",
-    "hasError": "Incorrect email or password",
-    "tryAgainLater": "An error occurred while sending recovery email. Please try again later.",
-    "registerLink": {
-      "title": "Don't have an account yet?",
-      "register": "register",
-      "text": "Register here."
-    }
-  },
-  "homePage": {
-    "title": "Home",
-    "description": "Rollers Hub is an innovative website dedicated to connecting skaters from around the world. Here, skating enthusiasts find a virtual space where they can share their experiences, make new friends, and expand their horizons in the world of skating. With an intuitive interface and modern design, Rollers Hub offers an exceptional user experience, allowing each community member to make the most of all available features.",
-    "h1": "Rollers Hub",
-    "h2": "Connecting skaters from around the world",
-    "p1": "If you are looking for information about skates for children, adults, professionals, or beginners, you have come to the right place. Our website is the ultimate destination for everything related to skating, from tips on where to buy your skates to places to skate and groups to join. Keep reading to find out how we can help you explore the world of skating like never before!",
-    "link": {
-      "about": "about",
-      "text": "Learn more about us."
-    },
-    "profiles": {
-      "title": "Who is using Rollers Hub?",
-      "description": "One of the great advantages of Rollers Hub is the ability to create personalized profiles and cards. Each user can create a detailed profile that reflects their identity as a skater, including photos, biography, and skating statistics. Additionally, user cards function as a digital business card, facilitating connections and interactions between skaters. This makes finding new friends and groups even more practical and fun. You can also offer services such as professional skater, skating instructor, artist, photographer, content creator, among other options.",
-      "h1": "Create a free account and start exploring!",
-      "link": {
-        "register": "register",
-        "text": "Create your free account, now!"
-      }
-    },
-    "groups": {
-      "title": "Find professional or casual skating groups. Create a group or join one in your region.",
-      "description": "The site also allows the creation and participation in skating groups, promoting a true spirit of community. Users can join existing groups or create new ones based on common interests, geographical location, or skill level. This not only helps to form stronger bonds within the skating community but also facilitates the organization of group activities, such as training sessions and collective rides.",
-      "p1": "In the skater group search section of our site, you will find a wide variety of groups dedicated to different skating styles and modalities. If you are passionate about skating, whether for children, women, or men, we have groups that perfectly match your profile. Our groups cover artistic skating, inline, quad, street, vertical, and specific modalities like speed, slalom, and enduro. Additionally, we have groups focused on urban and wizard skating for those who enjoy a freer and more radical style. In Brazil, the skating community is vibrant and diverse, and our groups reflect this richness, providing a space for everyone, including PCD (people with disabilities) seeking accessibility and safety in the sport.",
-      "p2": "Our platform is ideal for those who want to explore different modalities such as hockey, speed, slalon, downhill, endurance, wizards skating, or simply sliding for fun with friends and family. Each group offers a unique opportunity for learning and growth, where members share tips on equipment, safety techniques, and the best places to skate. The groups are formed by people who share the same passion for skating, creating a welcoming and motivating environment for all skill levels, from beginners to professionals.",
-      "p3": "Our skater group search section is designed to facilitate connections between skaters across Brazil. By joining a group, you can participate in events, training sessions, and meetups, expanding your network of friends and skating partners. Additionally, safety is always a priority, with guidelines and discussions on the proper use of protective equipment. If you have a passion for skating and want to connect with others who share the same interest, our platform is the perfect place to start. Join our community, discover new skating groups, and be part of this growing movement that brings together people of all ages and lifestyles around the passion for skating.",
-      "h1": "Teams and Groups",
-      "link": {
-        "group": "group",
-        "text": "Learn more about groups."
-      }
-    },
-    "events": {
-      "title": "Create and share events. Stay updated on the latest skating events.",
-      "description": "In addition to social features, Rollers Hub is an indispensable resource for those seeking new places to skate and skating events. Users can add and share places where they like to skate, including descriptions and reviews, helping other skaters discover new destinations. The search for events is also simplified, allowing members to find and participate in competitions, meetups, and workshops in their region or anywhere in the world.",
-      "p1": "Welcome to the Events section of our site, a space dedicated to all skating enthusiasts, from beginners to professionals. Here, you will find a wide variety of skating events happening around the world, including major cities such as São Paulo, Rio de Janeiro, New York, London, Buenos Aires, Montevideo, Mexico City, Bogotá, Madrid, and Paris. If you are a skate enthusiast always looking for new places to skate, our event calendar is the perfect place to discover the best meeting points for skaters of all modalities.",
-      "p2": "In our Events section, you can search for specific events using various filters. Whatever your favorite modality, such as speed, slalom, inline, quad, street, vertical, or even ice skating, we have events listed for all tastes. Additionally, we highlight children's, women's, and men's events, ensuring that the whole family can participate and have fun. With detailed information about each event, you will know exactly where to skate and what equipment is necessary to ensure your safety.",
-      "p3": "In addition to searching for events, you can also add new skating events directly to our site. Whether you are organizing a skate tour, a hockey competition, or an artistic skating event, our submission form is easy to use and allows you to share all important information with the skating community. Receive email updates about the status of your event and ensure it gets the visibility it deserves among skaters in Brazil and worldwide.",
-      "p4": "We are committed to accessibility and infrastructure for our events. Therefore, our platform also highlights events that offer accessibility resources for people with disabilities (PCD), ensuring that everyone can participate and enjoy the activities. We want our events to be inclusive, safe, and fun for everyone, regardless of their abilities or special needs.",
-      "p5": "Finally, our Events section is a true meeting point for skaters of all ages and experience levels. It is the ideal place to find new friends, participate in exciting events like the Urban Operation, explore new skating locations, and share your passion for the sport. Whether you are an amateur or professional skater, our platform is here to support your journey in the world of skating. Browse our events, add your own, and join the global community of skaters!"
-    },
-    "places": {
-      "title": "The best places to skate. Create a page and tell about the place or find a location in your region.",
-      "description": "Rollers Hub stands out for its use of cutting-edge technology, ensuring a secure, fast, and reliable platform. The team behind the site is constantly updating and improving the system, using the latest web development tools to provide the best possible experience for its users. From responsive design to interactive features, every detail of Rollers Hub has been carefully planned to meet the needs of the global skating community.",
-      "p1": "The Where to Skate section of our site is a true global guide for all skating enthusiasts, from beginners to the most experienced. In this section, you will find places to skate in various modalities, such as urban, wizard, speed, slalom, artistic, inline, quad, street, vertical, enduro, distance, and hockey. Whether in Brazil, highlighting Rio de Janeiro and São Paulo, or in international cities like New York, Paris, Buenos Aires, and Madrid, our section provides all the necessary information for you to make the most of your on-wheels experience.",
-      "p2": "In addition to listing amazing places to skate, our site allows users to add new places, share their experiences, and favorite their preferred spots. The inclusion of new places by users constantly enriches our database, promoting an active and collaborative community. For each location, we provide detailed information about the available infrastructure, such as parking, restrooms, restaurants, and snack bars, ensuring you have everything you need at your fingertips while having fun.",
-      "p3": "Safety and accessibility are priorities in our guide. We provide recommendations for appropriate equipment for each skating modality, always emphasizing the importance of using safety gear such as helmets, knee pads, and elbow pads. Additionally, we highlight places that have accessible infrastructure for people with disabilities (PCD), ensuring that everyone can enjoy skating without barriers. The presence of suitable areas for children, adults, and even pets is carefully verified, promoting an inclusive environment for the whole family and friends.",
-      "p4": "Our Where to Skate section is not limited to informing about the best locations but also encourages a healthy and active lifestyle. Skating is an activity that can be enjoyed by people of all ages, providing fun and outdoor exercise. Whether you are an urban skater who loves to explore the city or prefer the adrenaline of slalom and speed tracks, our guide offers options for all tastes and skill levels.",
-      "p5": "Exploring new places to skate has never been so easy and fun. Access the Where to Skate section of our site and discover a myriad of incredible destinations for skating. With detailed information about each location and an engaged community, we are here to help you find the perfect place to put on your skates and enjoy the freedom and excitement that only skating can provide."
-    },
-    "news": {
-      "title": "Latest News and Announcements",
-      "description": "Latest news about the site. Event announcements, competitions, and much more. Explore Rollers Hub and discover a world of possibilities on wheels!",
-      "p1": "The News section of our site is a vibrant meeting point for all skate enthusiasts, from beginners to professionals. Here, you will find a variety of content covering all skating modalities such as inline, quad, street, and vertical. Our team and collaborators are dedicated to bringing updated information about skating events, such as the exciting Urban Operation, where skaters gather for demonstrations of skills in slalom, enduro, and even hockey. Additionally, we highlight safety aspects and the best equipment to ensure a safe and fun experience for everyone.",
-      "p2": "Our news also covers tips on where to skate in cities, with a special focus on accessibility and infrastructure for everyone, including people with disabilities (PCD). With the growing popularity of skating, it is essential that everyone knows where to find suitable and safe spaces for the practice. We share information about places that offer excellent conditions for skaters of all levels, whether they are amateurs or professionals, and for all ages, from children to adults.",
-      "p3": "In addition to skating locations, our news section also promotes skating groups and communities that organize regular tours and events. These gatherings are a great opportunity to socialize, exchange experiences, and improve skills. Skating events, such as competitions and artistic skating performances, receive special attention, bringing the excitement and beauty of the sport to our readers. Stay tuned to our updates so you don't miss any of these events.",
-      "p4": "For female skaters and male skaters, we offer articles that address the specifics of each group, including personalized training and dedicated events. We are committed to supporting all segments of the skating community, encouraging participation and inclusion in all activities. Our mission is to create a space where everyone can share their passions and grow together as a united community.",
-      "p5": "Finally, our news section also focuses on highlighting innovations and trends in the skating world. From new techniques and styles, such as speed and wizard, to the latest equipment releases that improve performance and safety. We keep our readers informed about everything that is relevant in the skating universe, helping them stay updated and well-prepared for any challenge. Follow us and be part of this exciting journey in the world of skating."
-    }
-  },
-  "groupPage": {
-    "userNav": {
-      "userProfile": "Profile",
-      "userGroup": "Group",
-      "userEvent": "Event",
-      "userPlace": "Place",
-      "userDashboard": "Dashboard",
-      "userNews": "News",
-      "userLogout": "Logout"
-    },
-    "groupProfile": {
-      "groupStepper": {
-        "completeProfile": "Complete Profile",
-        "createEvent": "Create group",
-        "shareEvent": "Share with friends"
+  "workingExperiences": {
+    "id": "working-experiences",
+    "title": "Working Experiences",
+    "description": "My most recent working experiences.",
+    "experiences": [
+      {
+        "company": "Xgrow",
+        "role": "Senior Frontend Developer",
+        "duration": "June 2021 - December 2021",
+        "location": "Orlando, USA (Remote)",
+        "tasks": [
+          "Led a team of three frontend developers, one tester, and one designer.",
+          "Solved numerous technical problems and collaborated in building a new module for the platformU+2019s students.",
+          "Used agile methodologies to plan and execute effective sprints, documenting processes in Confluence and tracking tasks in Jira.",
+          "Managed to eliminate all bugs in the existing application, enabling the delivery of new features in record time.",
+          "Developed innovative and effective solutions through idea exchanges and experience sharing, prior to the existence of tools like ChatGPT."
+        ]
       },
-      "groupForm": {
-        "h1": "Create group",
-        "p1": "Create a new group or add an existing one. People will search groups by regions and cities. You can edit it later.",
-        "p2": "Describe the group correctly. It will be easier for others to find it. You can also add photos of the group.",
-        "p3": "If you did not like your group description, you can edit it later.",
-        "groupName": {
-          "title": "Group Name",
-          "label": "Type group name",
-          "placeholder": "My Group",
-          "required": "Place name is required",
-          "invalid": "Place name must be at least 2 characters long"
-        },
-        "groupSocialMedia": {
-          "title": "Group social media",
-          "label": "Type group social media",
-          "placeholder": "Facebook, Twitter, etc",
-          "required": "Place social media is required",
-          "invalid": "Place social media must be at least 2 characters long"
-        },
-        "groupPhone": {
-          "title": "Group phone",
-          "label": "Type group phone",
-          "placeholder": "123456789",
-          "required": "Place phone is required",
-          "invalid": "Place phone must be at least 2 characters long"
-        },
-        "groupType": {
-          "title": "Group type",
-          "label": "Select the group type",
-          "placeholder": "Stpre, Company, etc",
-          "options": {
-            "friends": "Friends",
-            "team": "Team",
-            "squad": "Squad",
-            "company": "Company",
-            "store": "Store",
-            "artistic": "Artistic",
-            "project": "Project",
-            "school": "School",
-            "announcer": "Announcer",
-            "press": "Press",
-            "content": "Content"
-          },
-          "required": "Place type is required",
-          "invalid": "Place type must be at least 2 characters long"
-        },
-        "groupCategories": {
-          "title": "Group categories",
-          "label": "Select the group categories",
-          "placeholder": "Skating, Inline, etc",
-          "options": {
-            "pwd": "PWD",
-            "men": "Men",
-            "women": "Women",
-            "kids": "Kids",
-            "senior": "Senior",
-            "all": "All",
-            "other": "Other"
-          }
-        },
-        "groupDescription": {
-          "title": "Group description",
-          "label": "Type the group description",
-          "placeholder": "Group always trainning together."
-        },
-        "groupAddress": {
-          "title": "Group address",
-          "label": "Type the group address",
-          "placeholder": "Street, number, neighborhood, etc",
-          "required": "Place address is required",
-          "invalid": "Place address must be at least 2 characters long"
-        },
-        "groupLogo": {
-          "title": "Group logo",
-          "label": "Type a link with your group picture",
-          "placeholder": "https://example.com/image.jpg",
-          "required": "Profile picture is required",
-          "invalid": "Profile picture must be URL"
-        },
-        "helpWithPicture": {
-          "title": "Terms of use",
-          "button": "Help with images links",
-          "h1": "We can not afford image storage in our server",
-          "h2": "For a better perfomance, we strongly recommend upload your images on a cloud provider",
-          "recommended": [
-            {
-              "title": "ImageBB",
-              "link": "https://imagebb.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Postimages",
-              "link": "https://postimages.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Github",
-              "link": "https://github.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            }
-          ]
-        },
-        "groupCountry": {
-          "title": "Group country",
-          "label": "Type and select group country",
-          "placeholder": "Brazil, USA, Mexico, etc",
-          "required": "Country is required"
-        },
-        "groupState": {
-          "title": "Group state/province",
-          "label": "Type and select group state",
-          "placeholder": "California, Texas, etc",
-          "required": "State/province is required"
-        },
-        "groupCity": {
-          "title": "Group city",
-          "label": "Type and select group city",
-          "placeholder": "Sao Paulo, New York, etc",
-          "required": "City is required"
-        },
-        "groupLocation": {
-          "title": "Group location",
-          "label": "Type group spot on Google Maps",
-          "placeholder": "-33.8688135, 151.2093784",
-          "required": "Place location is required"
-        },
-        "helpWithLocation": {
-          "button": "Help with Google Maps spot",
-          "title": "Terms of use",
-          "h1": "We can not afford location storage in our server",
-          "p1": "Copy and past the spot from Google Maps:",
-          "li1": "Click on the spot with the right mouse button",
-          "li2": "Click on the spot value with the left button",
-          "li3": "Copy and paste the spot value in the input",
-          "understood": "All right, understood",
-          "goToGoogle": "Go to Google Maps"
-        },
-        "startedAt": {
-          "title": "Group founding date",
-          "label": "Select the day the group was founded",
-          "required": "Beginning in skating is required"
-        },
-        "submit": "Add event",
-        "helpWithImages": "Help with images links",
-        "hasError": "Form validation error",
-        "tryAgainLater": "An error occurred while saving profile. Please try again later."
-      }
-    }
-  },
-  "eventPage": {
-    "userNav": {
-      "userProfile": "Profile",
-      "userGroup": "Group",
-      "userEvent": "Event",
-      "userPlace": "Place",
-      "userDashboard": "Dashboard",
-      "userNews": "News",
-      "userLogout": "Logout"
-    },
-    "eventProfile": {
-      "eventStepper": {
-        "completeProfile": "Complete Profile",
-        "createEvent": "Create event",
-        "shareEvent": "Share with friends"
+      {
+        "company": "Confidential",
+        "role": "Test Automation Developer",
+        "duration": "January 2022 - January 2024",
+        "location": "Portland, USA (Remote)",
+        "tasks": [
+          "Received an offer to work at an American software house with a client in the fiduciary sector, where I remained for 2 years.",
+          "Focused primarily on test automation and quality control, using tools like Cypress and automated testing frameworks.",
+          "Developed and maintained automation scripts to ensure consistency and efficiency of tests, contributing to the clientU+2019s software stability.",
+          "Worked in a high-security environment, adhering to strict confidentiality and data integrity protocols.",
+          "I can't speak much about this position, because there are a lot of confidential things to say."
+        ]
       },
-      "eventForm": {
-        "h1": "Create event",
-        "p1": "Create a new event or add an existing one. People will search events by regions and cities. You can edit it later.",
-        "p2": "Describe the event correctly. It will be easier for others to find it. You can also add photos of the event.",
-        "p3": "If you did not like your event description, you can edit it later.",
-        "eventName": {
-          "title": "Event Name",
-          "label": "Type the event name",
-          "placeholder": "My event",
-          "required": "Place name is required",
-          "invalid": "Place name must be at least 2 characters long"
-        },
-        "eventType": {
-          "title": "Event type",
-          "label": "Select the type of event",
-          "placeholder": "Urban, Tour, etc",
-          "options": [
-            { "value": "promotional", "description": "Promotional" },
-            { "value": "artistic", "description": "Artistic" },
-            { "value": "project", "description": "Social Project" },
-            { "value": "competition", "description": "Tournament" },
-            { "value": "tour", "description": "Urban Tour" },
-            { "value": "meeting", "description": "Meeting" },
-            { "value": "lecture", "description": "Lecture" },
-            { "value": "classes", "description": "Classes" },
-            { "value": "public-audience", "description": "Public audience" }
-          ],
-          "required": "Place type is required",
-          "invalid": "Place type must be at least 2 characters long"
-        },
-        "eventDescription": {
-          "title": "Event description",
-          "label": "Type the event description",
-          "placeholder": "The event may have time and date restrictions."
-        },
-        "eventAddress": {
-          "title": "Event address",
-          "label": "Type the event address",
-          "placeholder": "Street, number, neighborhood, etc",
-          "required": "Place address is required",
-          "invalid": "Place address must be at least 2 characters long"
-        },
-        "eventArt": {
-          "title": "Event banner or folder",
-          "label": "Type a link with your event picture",
-          "placeholder": "https://example.com/image.jpg",
-          "required": "Profile picture is required",
-          "invalid": "Profile picture must be URL"
-        },
-        "helpWithPicture": {
-          "title": "Terms of use",
-          "button": "Help with images links",
-          "h1": "We can not afford image storage in our server",
-          "h2": "For a better perfomance, we strongly recommend upload your images on a cloud provider",
-          "recommended": [
-            {
-              "title": "ImageBB",
-              "link": "https://imagebb.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Postimages",
-              "link": "https://postimages.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Github",
-              "link": "https://github.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            }
-          ]
-        },
-        "eventCountry": {
-          "title": "Your country",
-          "label": "Type and select your country",
-          "placeholder": "Brazil, USA, Mexico, etc",
-          "required": "Country is required"
-        },
-        "eventState": {
-          "title": "Your state/province",
-          "label": "Type and select your state",
-          "placeholder": "California, Texas, etc",
-          "required": "State/province is required"
-        },
-        "eventCity": {
-          "title": "Your city",
-          "label": "Type and select your city",
-          "placeholder": "Sao Paulo, New York, etc",
-          "required": "City is required"
-        },
-        "eventLocation": {
-          "title": "Event location",
-          "label": "Type event spot on Google Maps",
-          "placeholder": "-33.8688135, 151.2093784",
-          "required": "Place location is required"
-        },
-        "helpWithLocation": {
-          "button": "Help with Google Maps spot",
-          "title": "Terms of use",
-          "h1": "We can not afford location storage in our server",
-          "p1": "Copy and past the spot from Google Maps:",
-          "li1": "Click on the spot with the right mouse button",
-          "li2": "Click on the spot value with the left button",
-          "li3": "Copy and paste the spot value in the input",
-          "understood": "All right, understood",
-          "goToGoogle": "Go to Google Maps"
-        },
-        "eventDate": {
-          "title": "Event date",
-          "label": "Select the event date",
-          "placeholder": "2022-01-01",
-          "required": "Event date is required"
-        },
-        "eventRecurrency": {
-          "title": "Event recurrency",
-          "label": "Select the event recurrency",
-          "placeholder": "Daily, Weekly, etc",
-          "options": [
-            { "value": "none", "description": "None" },
-            { "value": "daily", "description": "Daily" },
-            { "value": "weekly", "description": "Weekly" },
-            { "value": "biweekly", "description": "Biweekly" },
-            { "value": "monthly", "description": "Monthly" },
-            { "value": "yearly", "description": "Yearly" },
-            { "value": "one-time", "description": "One time" },
-            { "value": "custom", "description": "Customized" }
-          ],
-          "invalid": "Event recurrency must be at least 2 characters long",
-          "required": "Event recurrency is required"
-        },
-        "startedAt": {
-          "title": "Beginning in skating",
-          "label": "Select when you started to skate",
-          "required": "Beginning in skating is required"
-        },
-        "startsAt": {
-          "title": "Starts at:",
-          "label": "HH:MM",
-          "placeholder": "14:00",
-          "required": "Beginning in skating is required"
-        },
-        "endsAt": {
-          "title": "Ends at:",
-          "label": "HH:MM",
-          "placeholder": "16:20",
-          "required": "Beginning in skating is required"
-        },
-        "submit": "Add event",
-        "helpWithImages": "Help with images links",
-        "hasError": "Form validation error",
-        "tryAgainLater": "An error occurred while saving profile. Please try again later."
+      {
+        "company": "MT Corp (CRM Project)",
+        "role": "Temporary Frontend Developer",
+        "duration": "July 2023 - December 2023",
+        "location": "São Paulo, Brazil (Remote)",
+        "tasks": [
+          "Worked on a temporary contract in a CRM project, contributing to the final development stage of the application.",
+          "Participated in the construction of various system modules, ensuring integration and functionality of each component.",
+          "Assisted the testing team in bug resolution and implementation of manual tests to ensure the final product's quality after the development phase.",
+          "Collaborated with different departments to improve workflow efficiency and internal communication.",
+          "I was hired just to help to delivery the project in time. Also I was keeping my skills up to date."
+        ]
       }
-    }
+    ]
   },
-  "placePage": {
-    "userNav": {
-      "userProfile": "Profile",
-      "userGroup": "Group",
-      "userEvent": "Event",
-      "userPlace": "Place",
-      "userDashboard": "Dashboard",
-      "userNews": "News",
-      "userLogout": "Logout"
-    },
-    "placeProfile": {
-      "placeStepper": {
-        "completeProfile": "Complete Profile",
-        "createPlace": "Add place",
-        "sharePlace": "Share with friends"
-      },
-      "placeForm": {
-        "h1": "Add a place for skating",
-        "p1": "Add your favorite place to Rollers Hub. Your can write a nice description and share it with your friends and family. Promote your favorite places, and get friends to join you.",
-        "p2": "Describe the place correctly. It will be easier for others to find it. Place has some hours and days restrictions? Let us know. You can also add photos and videos of the place.",
-        "p3": "If you did not like your place description, you can edit it later.",
-        "placeName": {
-          "title": "Place Name",
-          "label": "Type your place name",
-          "placeholder": "My place",
-          "required": "Place name is required",
-          "invalid": "Place name must be at least 2 characters long"
-        },
-        "placeType": {
-          "title": "Place Type",
-          "label": "Select the place type",
-          "placeholder": "Skatepark, skatepark, etc",
-          "options": [
-            { "value": "skatepark", "description": "Skatepark" },
-            { "value": "track", "description": "Track" },
-            { "value": "vertical", "description": "Vertical" },
-            { "value": "street", "description": "Street" },
-            { "value": "avenue", "description": "Avenue" },
-            { "value": "road", "description": "Road" },
-            { "value": "hill", "description": "Hill" },
-            { "value": "square", "description": "Square" },
-            { "value": "park", "description": "Park" },
-            { "value": "stadium", "description": "Stadium" },
-            { "value": "parking", "description": "Parking" },
-            { "value": "bike-lane", "description": "Bike lane" },
-            { "value": "ice-rink", "description": "Ice rink" }
-          ],
-          "required": "Place type is required",
-          "invalid": "Place type must be at least 2 characters long"
-        },
-        "placeDescription": {
-          "title": "Place Description",
-          "label": "Type your place description",
-          "placeholder": "The place may have time and date restrictions."
-        },
-        "placeAddress": {
-          "title": "Place Address",
-          "label": "Type your place address",
-          "placeholder": "Street, number, neighborhood, etc",
-          "required": "Place address is required",
-          "invalid": "Place address must be at least 2 characters long"
-        },
-        "placeCaracteristics": {
-          "title": "Place Caracteristics",
-          "label": "Type and select your place caracteristics",
-          "private": "Is private?",
-          "public": "Is public?",
-          "outdoor": "Is outdoor?",
-          "indoor": "Is indoor?",
-          "adults": "Adults only?",
-          "children": "Children?",
-          "yes": "Pets?",
-          "no": "No pets?",
-          "required": "Place caracteristics is required",
-          "invalid": "Place caracteristics must be at least 2 characters long"
-        },
-        "recommendedGears": {
-          "title": "Recommended Gears",
-          "label": "Type and select your recommended gears",
-          "inline": "Inline",
-          "speed": "Speed",
-          "wizard": "Wizard",
-          "street": "Street",
-          "quad": "Quad",
-          "hockey": "Hockey",
-          "blades": "Blades",
-          "other": "Other"
-        },
-        "placeInfraestructure": {
-          "title": "Place Infraestructure",
-          "label": "Type and select your place infraestructure",
-          "parking": "Parking",
-          "wifi": "Wifi",
-          "bathrooms": "Bathrooms",
-          "restaurants": "Restaurants",
-          "transportation": "Transportation",
-          "other": "Other"
-        },
-        "placePicture": {
-          "title": "Place Picture",
-          "label": "Type a link with your profile picture",
-          "placeholder": "https://example.com/image.jpg",
-          "required": "Profile picture is required",
-          "invalid": "Profile picture must be URL"
-        },
-        "helpWithPicture": {
-          "button": "Help with images links",
-          "title": "Terms of use",
-          "h1": "We can not afford image storage in our server",
-          "h2": "For a better perfomance, we strongly recommend upload your images on a cloud provider",
-          "recommended": [
-            {
-              "title": "ImageBB",
-              "link": "https://imagebb.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Postimages",
-              "link": "https://postimages.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Github",
-              "link": "https://github.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            }
-          ]
-        },
-        "placeAvatar": {
-          "title": "place's Avatar",
-          "label": "Type a link with your avatar picture",
-          "placeholder": "https://example.com/image.jpg",
-          "required": "Profile picture is required",
-          "invalid": "Profile picture must be URL"
-        },
-        "placeCountry": {
-          "title": "Your country",
-          "label": "Type and select your country",
-          "placeholder": "Brazil, USA, Mexico, etc",
-          "required": "Country is required"
-        },
-        "placeState": {
-          "title": "Your state/province",
-          "label": "Type and select your state",
-          "placeholder": "California, Texas, etc",
-          "required": "State/province is required"
-        },
-        "placeCity": {
-          "title": "Your city",
-          "label": "Type and select your city",
-          "placeholder": "Sao Paulo, New York, etc",
-          "required": "City is required"
-        },
-        "placeLocation": {
-          "title": "Place location",
-          "label": "Type place spot on Google Maps",
-          "placeholder": "-33.8688135, 151.2093784",
-          "required": "Place location is required"
-        },
-        "helpWithLocation": {
-          "button": "Help with Google Maps spot",
-          "title": "Terms of use",
-          "h1": "We can not afford location storage in our server",
-          "p1": "Copy and past the spot from Google Maps:",
-          "li1": "Click on the spot with the right mouse button",
-          "li2": "Click on the spot value with the left button",
-          "li3": "Copy and paste the spot value in the input",
-          "understood": "All right, understood",
-          "goToGoogle": "Go to Google Maps"
-        },
-        "startedAt": {
-          "title": "Beginning in skating",
-          "label": "Select when you started to skate",
-          "required": "Beginning in skating is required"
-        },
-        "submit": "Add place",
-        "helpWithImages": "Help with images links",
-        "hasError": "Form validation error",
-        "tryAgainLater": "An error occurred while saving profile. Please try again later."
+  "personalProjects": {
+    "id": "personal-projects",
+    "title":"Personal Projects",
+    "description": "Some of my personal projects.",
+    "projects": [
+      {
+        "title": "Rollers Hub",
+        "description": "An application aimed at connecting skaters worldwide.",
+        "link": "https://www.rollershub.com",
+        "thumbnail": "/assets/en-home-thumb-resized.png"
       }
-    }
+    ]
   },
-  "userPage": {
-    "userNav": {
-      "userProfile": "Profile",
-      "userGroup": "Group",
-      "userEvent": "Event",
-      "userPlace": "Place",
-      "userDashboard": "Dashboard",
-      "userNews": "News",
-      "userLogout": "Logout"
-    },
-    "userProfile": {
-      "userStepper": {
-        "createAccount": "Create Account",
-        "completeProfile": "Complete Profile",
-        "shareProfile": "Share with friends"
-      },
-      "userForm": {
-        "h1": "Complete your profile",
-        "p1": "After completing your profile, you will be able to create or follow a group, track events and places, share it with your friends and family. We do not share your sensetive information with third parties.",
-        "p2": "We will only use your information to create and share content that is relevant to you. We will not sell or share your information with any third parties.",
-        "p3": "You can always edit your profile at any time.",
-        "userPicture": {
-          "title": "Profile Picture",
-          "label": "Type a link with your profile picture",
-          "placeholder": "https://example.com/image.jpg",
-          "required": "Profile picture is required",
-          "invalid": "Profile picture must be URL"
-        },
-        "helpWithPicture": {
-          "button": "Help with profile picture",
-          "title": "Terms of use",
-          "h1": "We can not afford image storage in our server",
-          "h2": "For a better perfomance, we strongly recommend upload your images on a cloud provider",
-          "recommended": [
-            {
-              "title": "ImageBB",
-              "link": "https://imagebb.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Postimages",
-              "link": "https://postimages.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            },
-            {
-              "title": "Github",
-              "link": "https://github.com/",
-              "p1": "You will have to create an account with your email or Google account",
-              "p2": "Here is an example link image:"
-            }
-          ]
-        },
-        "userAvatar": {
-          "title": "User's Avatar",
-          "label": "Type a link with your avatar picture",
-          "placeholder": "https://example.com/image.jpg",
-          "required": "Profile picture is required",
-          "invalid": "Profile picture must be URL"
-        },
-        "userCountry": {
-          "title": "Your country",
-          "label": "Type and select your country",
-          "placeholder": "Brazil, USA, Mexico, etc",
-          "required": "Country is required"
-        },
-        "userState": {
-          "title": "Your state/province",
-          "label": "Type and select your state",
-          "placeholder": "California, Texas, etc",
-          "required": "State/province is required"
-        },
-        "userCity": {
-          "title": "Your city",
-          "label": "Type and select your city",
-          "placeholder": "Sao Paulo, New York, etc",
-          "required": "City is required"
-        },
-        "userQuote": {
-          "title": "Your quote",
-          "label": "Type your quote",
-          "placeholder": "I love Rollers Hub!"
-        },
-        "userBiography": {
-          "title": "Your biography",
-          "label": "Type your biography",
-          "placeholder": "I'm a professional skater!"
-        },
-        "userPhone": {
-          "title": "Your phone number",
-          "label": "Only numbers are allowed",
-          "placeholder": "11999999999",
-          "required": "Phone number is required"
-        },
-        "userSocialMedia": {
-          "title": "Your social media",
-          "label": "Type the link to your social media",
-          "placeholder": "https://instagram.com/@username",
-          "required": "Social media is required",
-          "invalid": "Social media must be URL"
-        },
-        "userCategory": {
-          "title": "Your categories",
-          "label": "Type and select your categories",
-          "placeholder": "Wizard, Downhill, Speed, etc.",
-          "required": "Categories are required"
-        },
-        "userLevel": {
-          "title": "Your level",
-          "label": "Type and select your level",
-          "placeholder": "Beginner, Intermediate, etc.",
-          "required": "Level is required",
-          "levels": {
-            "beginner": "Beginner",
-            "intermediate": "Intermediate",
-            "advanced": "Advanced",
-            "expert": "Expert",
-            "master": "Master",
-            "professional": "Professional"
-          }
-        },
-        "userExperience": {
-          "title": "Your experience",
-          "label": "Type and select your experience",
-          "placeholder": "Beginner, Intermediate, etc.",
-          "required": "Experience is required",
-          "experiences": {
-            "beginner": "Beginner",
-            "intermediate": "Intermediate",
-            "advanced": "Advanced",
-            "expert": "Expert",
-            "master": "Master",
-            "professional": "Professional"
-          }
-        },
-        "userSkills": {
-          "title": "Your skills",
-          "label": "Type and select your skills",
-          "placeholder": "Beginner, Intermediate, etc.",
-          "required": "Skills are required",
-          "skills": {
-            "beginner": "Beginner",
-            "intermediate": "Intermediate",
-            "advanced": "Advanced",
-            "expert": "Expert",
-            "master": "Master",
-            "professional": "Professional"
-          }
-        },
-        "startedAt": {
-          "title": "Beginning in skating",
-          "label": "Select when you started to skate",
-          "required": "Beginning in skating is required"
-        },
-        "submitProfile": "Complete Profile",
-        "helpWithImages": "Help with images links",
-        "hasError": "Form validation error",
-        "tryAgainLater": "An error occurred while saving profile. Please try again later."
-      }
-    }
+  "technologiesAndTools": {
+    "id": "technologies-and-tools",
+    "title": "Technologies and Tools",
+    "description": "A list with my core skills.",
+    "list": [
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Nest.js",
+      "Docker",
+      "Docker Compose",
+      "PostgreSQL",
+      "MySQL",
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Flowbite",
+      "HTML",
+      "CSS",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Cypress",
+      "Jest"
+    ]
   },
-  "completeProfile": {
-    "h1": "You have not completed your profile yet",
-    "p1": "You must complete your profile to get access to the group, event and place features. You can edit it later.",
-    "p2": "Be a partner or a sponsor. And get access to the latest releases and features. We will only create and share content that is relevant to you.",
-    "p3": "Click on the button below to complete your profile.",
-    "link": "Complete your profile",
-    "linkKnowMore": {
-      "text": "Know more about partners and sponsors",
-      "about": "about"
-    }
+  "otherTechnologies": {
+    "id": "other-technologies",
+    "title": "Other Technologies",
+    "list": [
+      "PHP",
+      "Laravel",
+      "GraphQL",
+      "Apollo",
+      "Jira",
+      "Confluence",
+      "Gitflow",
+      "MongoDB",
+      "React Native",
+      "Figma"
+    ]
   },
-  "formCompletion": {
-    "user": {
-      "h1": "Congratulations, you just completed your profile!",
-      "p1": "Now you can start using Rollers Hub! Create or follow groups, track events and places, share it with your friends and family. We do not share your sensetive information with third parties.",
-      "p2": "We are constantly working to bring the best experience for everyone.",
-      "p3": "Be a partner or a sponsor. And get access to the latest releases and features. We will only create and share content that is relevant to you.",
-      "link": "Click here to see your profile",
-      "linkKnowMore": {
-        "text": "Know more about partners and sponsors",
-        "about": "about"
-      }
-    },
-    "group": {
-      "h1": "Congratulations, you just completed your group!",
-      "p1": "People can follow your group and share it with your friends and family. We do not share your sensetive information with third parties.",
-      "p2": "When you create a new event the followers of your group will be notified by email.",
-      "p3": "Be a partner or a sponsor. And get access to the latest releases and features. We will only create and share content that is relevant to you.",
-      "link": "Click here to see your group",
-      "linkKnowMore": {
-        "text": "Know more about partners and sponsors",
-        "about": "about"
-      }
-    },
-    "event": {
-      "h1": "Congratulations, you just completed your event!",
-      "p1": "People can search your event and share it with your friends and family. We do not share your sensetive information with third parties.",
-      "p2": "When you create a new event the followers of your group will be notified by email.",
-      "p3": "Be a partner or a sponsor. And get access to the latest releases and features. We will only create and share content that is relevant to you.",
-      "link": "Click here to see your event",
-      "linkKnowMore": {
-        "text": "Know more about partners and sponsors",
-        "about": "about"
-      }
-    },
-    "place": {
-      "h1": "Congratulations, you just completed your place!",
-      "p1": "People can search your place and share it with your friends and family. We do not share your sensetive information with third parties.",
-      "p2": "When you create a new event the followers of your group will be notified by email.",
-      "p3": "Be a partner or a sponsor. And get access to the latest releases and features. We will only create and share content that is relevant to you.",
-      "link": "Click here to see your place",
-      "linkKnowMore": {
-        "text": "Know more about partners and sponsors",
-        "about": "about"
-      }
-    }
-  },
-  "footer": {
-    "nav": {
-      "home": "Home",
-      "groups": "Groups",
-      "events": "Events",
-      "places": "Places",
-      "news": "News",
-      "login": "Login",
-      "register": "Register",
-      "logout": "Logout",
-      "store": "Store",
-      "blog": "Blog",
-      "about": "About",
-      "jobs": "Jobs",
-      "announcements": "Announcements",
-      "contact": "Contact"
-    },
-    "chats": {
-      "title": "Official Chats",
-      "all": "All",
-      "brazil": "Brasil",
-      "argentina": "Argentina",
-      "colombia": "Colombia",
-      "uruguay": "Uruguay",
-      "peru": "Peru",
-      "mexico": "Mexico",
-      "canada": "Canada",
-      "chile": "Chile",
-      "usa": "USA",
-      "portugal": "Portugal",
-      "spain": "Spain",
-      "france": "France",
-      "germany": "Germany",
-      "united-kingdom": "United Kingdom",
-      "united-states": "United States",
-      "italy": "Italy",
-      "netherlands": "Netherlands",
-      "austria": "Austria",
-      "switzerland": "Switzerland",
-      "belgium": "Belgium",
-      "nigeria": "Nigeria",
-      "poland": "Poland",
-      "ireland": "Ireland",
-      "finland": "Finland",
-      "denmark": "Denmark",
-      "sweden": "Sweden",
-      "norway": "Norway",
-      "iceland": "Iceland",
-      "czech-republic": "Czech Republic",
-      "hungary": "Hungary",
-      "slovakia": "Slovakia",
-      "slovenia": "Slovenia",
-      "croatia": "Croatia",
-      "serbia": "Serbia",
-      "greece": "Greece",
-      "bulgaria": "Bulgaria",
-      "moldova": "Moldova",
-      "latvia": "Latvia",
-      "liechtenstein": "Liechtenstein",
-      "lithuania": "Lithuania",
-      "estonia": "Estonia",
-      "albania": "Albania",
-      "malta": "Malta",
-      "cyprus": "Cyprus",
-      "monaco": "Monaco",
-      "new-zealand": "New Zealand",
-      "australia": "Australia",
-      "fiji": "Fiji",
-      "philippines": "Philippines",
-      "india": "India",
-      "indonesia": "Indonesia",
-      "china": "China",
-      "japan": "Japan",
-      "korea": "South Korea",
-      "thailand": "Thailand",
-      "vietnam": "Vietnam",
-      "taiwan": "Taiwan",
-      "singapore": "Singapore"
-    }
+  "contacts": {
+    "id": "contacts",
+    "title": "Contacts",
+    "description": "My contacts and social medias",
+    "email": "hugoleonardo.dev@gmail.com",
+    "phone": "+5531999699361",
+    "linkedin": "https://www.linkedin.com/in/hugo-leonardo-1b94592b1/",
+    "github": "https://github.com/hugoleonardodev"
   }
 }

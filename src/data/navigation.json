@@ -1,0 +1,18 @@
+[
+  {
+    "title": "About Me",
+    "href": "#about-me"
+  },
+  {
+    "title": "Working Experiences",
+    "href": "#working-experiences"
+  },
+  {
+    "title": "Personal Projects",
+    "href": "#personal-projects"
+  },
+  {
+    "title": "Contacts",
+    "href": "#contacts"
+  }
+]

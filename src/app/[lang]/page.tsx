@@ -1,7 +1,11 @@
 import React from 'react'
-import JumbotronMain from '@/components/organisms/jumbotron-main'
 import { type Metadata, type ResolvingMetadata } from 'next'
 import { type LocalesAvailable, getDictionary } from '@/functions/getDictionary'
+import AboutSection from '@/components/about'
+import { WorkingExperience } from '@/components/working'
+import ProjectsList from '@/components/projects'
+import TechnologiesList from '@/components/technologies'
+import Contacts from '@/components/contacts'
 
 interface Props {
   params: { id: string; lang: LocalesAvailable }
@@ -87,14 +91,17 @@ export async function generateMetadata({ params, searchParams }: Props, parent: 
 }
 
 export default async function Home({ params }: { params: { lang: LocalesAvailable } }): Promise<React.JSX.Element> {
-  const { homePage } = await getDictionary(params.lang) // en
+  const { aboutMe, workingExperiences, personalProjects, technologiesAndTools, contacts } = await getDictionary(
+    params.lang,
+  ) // en
 
   return (
     <main className="flex flex-col md:flex lg:flex xl:flex">
-      <JumbotronMain mainDictionary={homePage} />
-      {/* <SocialProofOperation />
-      <MarketingSponsors /> */}
-      <div id="states-modales-wrapper" />
+      <AboutSection aboutMeDictionary={aboutMe} />
+      <ProjectsList projectsDictionary={personalProjects} />
+      <WorkingExperience workingExperienceDictionary={workingExperiences} />
+      <TechnologiesList technologiesDictionary={technologiesAndTools} />
+      <Contacts contactsDictionary={contacts} />
     </main>
   )
 }
