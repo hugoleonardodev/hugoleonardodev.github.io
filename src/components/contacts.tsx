@@ -17,7 +17,7 @@ function Contacts({ contactsDictionary }: ContactsProps): React.JSX.Element {
       <h1 className="px-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
         {contactsDictionary.title}
       </h1>
-      <h2 className="px-2 text-xl font-bold tracking-tight text-gray-600 dark:text-gray-300">
+      <h2 className="px-2 mb-8 text-xl font-bold tracking-tight text-gray-600 dark:text-gray-300">
         {contactsDictionary.description}
       </h2>
       <div className="flex flex-col items-center pb-10">
@@ -27,7 +27,7 @@ function Contacts({ contactsDictionary }: ContactsProps): React.JSX.Element {
         <div className="flex mt-4 md:mt-6">
           <a
             href="#"
-            className="inline-flex items-center px-4 py-2 text-sm font-medium text-center rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium text-center rounded-lg hover:bg-purple-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-[#1C1917] dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-[#E11D48]"
           >
             <svg
               className="w-10 h-10 text-gray-800 dark:text-white"
@@ -48,7 +48,7 @@ function Contacts({ contactsDictionary }: ContactsProps): React.JSX.Element {
           </a>
           <a
             href="#"
-            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none rounded-lg hover:bg-purple-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-[#1C1917] dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-[#E11D48]"
           >
             <svg
               className="w-10 h-10 text-blue-700 dark:text-white"
@@ -70,7 +70,7 @@ function Contacts({ contactsDictionary }: ContactsProps): React.JSX.Element {
           </a>
           <a
             href="#"
-            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none rounded-lg hover:bg-purple-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-[#1C1917] dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-[#E11D48]"
           >
             <svg
               className="w-10 h-10 text-green-700 dark:text-white"
@@ -96,7 +96,7 @@ function Contacts({ contactsDictionary }: ContactsProps): React.JSX.Element {
           </a>
           <a
             href="#"
-            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none rounded-lg hover:bg-purple-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-[#1C1917] dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-[#E11D48]"
           >
             <svg
               className="w-10 h-10 text-red-700 dark:text-white"

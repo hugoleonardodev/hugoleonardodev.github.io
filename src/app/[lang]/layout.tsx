@@ -1,4 +1,4 @@
-import { DarkThemeToggle, Flowbite, ThemeModeScript } from 'flowbite-react'
+import { Flowbite, ThemeModeScript } from 'flowbite-react'
 import React from 'react'
 import { Inter, Roboto_Mono } from 'next/font/google'
 import { type Metadata } from 'next'
@@ -54,7 +54,7 @@ const customTheme = {
       pages: {
         selector: {
           active:
-            'bg-purple-50 text-purple-600 hover:bg-purple-100 hover:text-purple-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white',
+            'bg-purple-50 text-purple-600 hover:bg-purple-100 hover:text-purple-700 dark:border-gray-700 dark:bg-[#1C1917] dark:text-white',
         },
       },
     },
@@ -63,9 +63,9 @@ const customTheme = {
         point: {
           marker: {
             icon: {
-              base: 'h-3 w-3 text-purple-600 dark:text-purple-300',
+              base: 'h-3 w-3 text-purple-600 dark:text-purple-300 ',
               wrapper:
-                'absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-purple-200 ring-8 ring-white dark:bg-purple-900 dark:ring-gray-900',
+                'absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-purple-200 ring-8 ring-gray-200 dark:bg-[#E11D48] dark:ring-pink-900',
             },
           },
         },
@@ -76,7 +76,7 @@ const customTheme = {
         root: {
           base: 'absolute top-10 z-50 block pt-2',
           inline: 'relative top-0 z-auto',
-          inner: 'inline-block rounded-lg bg-white p-4 shadow-lg dark:bg-gray-700',
+          inner: 'inline-block rounded-lg bg-white p-4 shadow-lg dark:bg-[#1C1917]',
         },
         footer: {
           button: {
@@ -144,17 +144,11 @@ export default async function RootLayout({
         </Head>
 
         <body
-          className={`${inter.variable} ${robotoMono.variable} md:px-8 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 `}
+          className={`${inter.variable} ${robotoMono.variable} md:px-8 lg:px-16 xl:px-32 bg-gray-100 dark:bg-[#1C1917] dark:text-gray-400 dark:border-gray-600 `}
         >
           <MyHeader navigationDictionary={navigation} />
-          {/* <HeaderMain headerDictionary={header} navigationDictionary={navigationUser} /> */}
-          <main className="flex items-start sm:items-start justify-center p-4 sm:p-8 gap-8">
-            {/* <NavigationUser navigationDictionary={navigationUser} /> */}
-            {children}
-          </main>
-          {/* <FooterMain footerDictionary={footer} /> */}
+          <main className="flex items-start sm:items-start justify-center p-4 sm:p-8 gap-8">{children}</main>
           <MyFooter navigationDictionary={navigation} />
-          <DarkThemeToggle />
         </body>
       </html>
     </Flowbite>

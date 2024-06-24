@@ -1,51 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // i18n: {
-  //   locales: ['en','en-US', 'en-GB', 'pt', 'pt-BR', 'es', 'es-ES'], // Suas localidades suportadas
-  //   defaultLocale: 'en-US',
-  // },
+  /**
+   * Enable static exports for the App Router.
+   *
+   * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
+   */
+  output: "export",
+
+  /**
+   * Set base path. This is the slug of your GitHub repository.
+   *
+   * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
+   */
+  basePath: "/nextjs-github-pages",
+
+  /**
+   * Disable server-based image optimization. Next.js does not support
+   * dynamic features with static exports.
+   *
+   * @see https://nextjs.org/docs/app/api-reference/components/image#unoptimized
+   */
   images: {
-    dangerouslyAllowSVG: true,
-    //   contentDispositionType: 'attachment',
-    //   contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'ibb.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.ibb.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'hugoleonardodev.github.io',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.postimg.cc',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'postimg.cc',
-        port: '',
-        pathname: '/**',
-      },
-    ],
+    unoptimized: true,
   },
   async rewrites() {
     return [
@@ -53,18 +29,10 @@ const nextConfig = {
         source: '/:locale/assets/:path*',
         destination: '/assets/:path*',
       },
-      // {
-      //   source: '/:path*.txt',
-      //   destination: '/:path*.txt',
-      // },
       {
         source: '/:path*.xml',
         destination: '/:path*.xml',
       },
-      // {
-      //   source: '/:locale/robots.txt',
-      //   destination: '/robots.txt',
-      // },
       {
         source: '/robots.txt',
         destination: '/robots.txt',
