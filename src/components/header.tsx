@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from 'flowbite-react'
+import { DarkThemeToggle, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from 'flowbite-react'
 
 interface MyHeaderProps {
   navigationDictionary: Array<{
@@ -22,16 +22,17 @@ export function MyHeader({ navigationDictionary }: MyHeaderProps): React.JSX.Ele
     }
   }, [])
   return (
-    <Navbar fluid rounded id="navbar">
+    <Navbar fluid rounded id="navbar" className="dark:bg-black">
       <NavbarBrand href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">hugoleonardodev</span>
       </NavbarBrand>
+      <DarkThemeToggle />
 
       <NavbarToggle id="header-navbar-toggle" />
 
       <NavbarCollapse>
         {navigationDictionary.map(link => (
-          <NavbarLink href={link.href} key={link.href}>
+          <NavbarLink href={link.href} key={link.href} className="md:dark:hover:text-[#E11D48]">
             {link.title}
           </NavbarLink>
         ))}

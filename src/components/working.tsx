@@ -8,6 +8,7 @@ interface WorkingExperienceProps {
   workingExperienceDictionary: {
     id: string
     title: string
+    description: string
     experiences: Array<{
       company: string
       role: string
@@ -21,6 +22,12 @@ export function WorkingExperience({ workingExperienceDictionary }: WorkingExperi
   const { width } = useWindowSize()
   return (
     <section className="pl-6 pr-2 sm:pl-0 pr-0">
+      <h1 className="px-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+        {workingExperienceDictionary.title}
+      </h1>
+      <h2 className="px-2 mb-8 text-xl font-bold tracking-tight text-gray-600 dark:text-gray-300">
+        {workingExperienceDictionary.description}
+      </h2>
       <Timeline horizontal={width > 1023} id={workingExperienceDictionary.id} className="">
         {workingExperienceDictionary.experiences.map(experience => (
           <Timeline.Item key={experience.company}>

@@ -18,7 +18,7 @@ interface AboutMeProps {
 }
 function AboutSection({ aboutMeDictionary }: AboutMeProps): React.JSX.Element {
   return (
-    <section className="w-full flex flex-col bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700">
+    <section className="w-full flex flex-col bg-gray-100 rounded-lg dark:bg-[#1C1917] dark:border-gray-700">
       <div id={aboutMeDictionary.id}>
         <h1 className="px-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
           {aboutMeDictionary.title}
@@ -26,7 +26,9 @@ function AboutSection({ aboutMeDictionary }: AboutMeProps): React.JSX.Element {
         <h2 className="px-2 text-xl font-bold tracking-tight text-gray-600 dark:text-gray-300">
           {aboutMeDictionary.name} - {aboutMeDictionary.description}
         </h2>
-        <p className="px-2 mt-4 text-gray-500 dark:text-gray-400">{aboutMeDictionary.hello}</p>
+        <p className="px-2 pb-8 pt-4 mt-4 text-gray-500 text-center text-3xl dark:text-gray-400">
+          {aboutMeDictionary.hello}
+        </p>
         <div className="flex flex-col gap-8 items-center sm:flex-row">
           <div>
             <img src="/assets/home1.png" alt="home" className="min-w-96 sm:rounded-2xl" />

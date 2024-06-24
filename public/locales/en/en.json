@@ -5,12 +5,16 @@
       "href": "#about-me"
     },
     {
-      "title": "Working Experiences",
-      "href": "#working-experiences"
-    },
-    {
       "title": "Personal Projects",
       "href": "#personal-projects"
+    },
+    {
+      "title": "Professional Experiences",
+      "href": "#professional-experiences"
+    },
+    {
+      "title": "Technologies and Tools",
+      "href": "#technologies-and-tools"
     },
     {
       "title": "Contacts",
@@ -19,68 +23,22 @@
   ],
   "aboutMe": {
     "id": "about-me",
-    "title": "About me",
+    "title": "About Me",
     "name": "Hugo Leonardo",
     "description": "Full Stack Developer",
     "hello": "Hello,",
-    "p1": "My name is Hugo Leonardo, and I am a Full Stack Developer from Belo Horizonte, Brazil. Since 2020, I have been working as a web developer with a strong focus on frontend development. I have led a team of three frontend developers, a tester, and a designer, where we successfully built a new product and maintained an existing one. Our work involved meticulous planning and priority setting using backlog grooming at the start of each sprint. We documented everything in Confluence and tracked tasks with Jira and Gitflow. During my tenure, we managed to eliminate all bugs in the existing application, allowing us to deliver a new student module in record time. This role greatly enhanced my project and team management skills.",
-    "p2": "For the past two years, I worked at an American company serving a client in the fiduciary sector, a complex field involving national security issues. Initially, I focused on test automation using Cypress and jQuery, which was very motivating. However, when my role shifted towards manual testing, it no longer aligned with my career aspirations as a programmer. After careful consideration, I decided to seek new opportunities.",
-    "p3": "Recently, I dedicated several months to a personal full-stack project. As a skater in my free time, I noticed the lack of a quality website for the skating community. Most available sites were either poorly designed or merely online stores. This led me to create Rollers Hub, an application aimed at connecting skaters worldwide. Developed with the support of a skater community, I continue to enhance the site with new features in my spare time.",
-    "p4": "I am currently seeking a full-stack web developer position where I can apply my skills and continue to grow professionally. I am particularly drawn to [Company Name] because [specific reason related to the company or role]. I am confident that my experience in team leadership, test automation, and full-stack development makes me a strong candidate for this position. I am excited to work with you and look forward to joining your team!",
+    "p1": "My name is Hugo Leonardo and I am a Full Stack Developer from Belo Horizonte, Brazil. Since 2020, I have been working as a web developer with a strong focus on frontend development. I led a team of three frontend developers, a tester, and a designer, where we successfully built a new product and maintained an existing one. Our work involved meticulous planning and prioritizing using backlog grooming at the start of each sprint. We documented everything on Confluence and tracked tasks with Jira and Gitflow. During my tenure, we managed to eliminate all bugs in the existing application, allowing us to deliver a new module for students in record time. This role greatly enhanced my project and team management skills.",
+    "p2": "For the past two years, I have worked for an American company serving a client in the fiduciary sector, a complex field involving national security issues. Initially, I focused on test automation using Cypress and jQuery, which was very motivating. However, when my role shifted to manual testing, it no longer aligned with my career aspirations as a programmer. After careful consideration, I decided to seek new opportunities.",
+    "p3": "Recently, I dedicated a few months to a full stack personal project. As a skater in my spare time, I noticed the lack of a quality website for the skating community. Most available sites were poorly designed or just online stores. This led me to create Rollers Hub, an application aimed at connecting skaters worldwide. Developed with the support of a community of skaters, I continue to enhance the site with new features in my free time.",
+    "p4": "I am currently seeking a position as a full stack web developer where I can apply my skills and continue to grow professionally. I have a particular interest in [Company Name] because [specific reason related to the company or role]. I am confident that my experience in team leadership, test automation, and full stack development makes me a strong candidate for this position. I am excited to work with you and look forward to joining your team!",
     "p5": "Thank you for your consideration. I look forward to the possibility of discussing how I can contribute to your team.",
-    "regards": "Best regards,",
+    "regards": "Sincerely,",
     "signature": "Hugo Leonardo - Full Stack Developer"
-  },
-  "workingExperiences": {
-    "id": "working-experiences",
-    "title": "Working Experiences",
-    "description": "My most recent working experiences.",
-    "experiences": [
-      {
-        "company": "Xgrow",
-        "role": "Senior Frontend Developer",
-        "duration": "June 2021 - December 2021",
-        "location": "Orlando, USA (Remote)",
-        "tasks": [
-          "Led a team of three frontend developers, one tester, and one designer.",
-          "Solved numerous technical problems and collaborated in building a new module for the platformU+2019s students.",
-          "Used agile methodologies to plan and execute effective sprints, documenting processes in Confluence and tracking tasks in Jira.",
-          "Managed to eliminate all bugs in the existing application, enabling the delivery of new features in record time.",
-          "Developed innovative and effective solutions through idea exchanges and experience sharing, prior to the existence of tools like ChatGPT."
-        ]
-      },
-      {
-        "company": "Confidential",
-        "role": "Test Automation Developer",
-        "duration": "January 2022 - January 2024",
-        "location": "Portland, USA (Remote)",
-        "tasks": [
-          "Received an offer to work at an American software house with a client in the fiduciary sector, where I remained for 2 years.",
-          "Focused primarily on test automation and quality control, using tools like Cypress and automated testing frameworks.",
-          "Developed and maintained automation scripts to ensure consistency and efficiency of tests, contributing to the clientU+2019s software stability.",
-          "Worked in a high-security environment, adhering to strict confidentiality and data integrity protocols.",
-          "I can't speak much about this position, because there are a lot of confidential things to say."
-        ]
-      },
-      {
-        "company": "MT Corp (CRM Project)",
-        "role": "Temporary Frontend Developer",
-        "duration": "July 2023 - December 2023",
-        "location": "São Paulo, Brazil (Remote)",
-        "tasks": [
-          "Worked on a temporary contract in a CRM project, contributing to the final development stage of the application.",
-          "Participated in the construction of various system modules, ensuring integration and functionality of each component.",
-          "Assisted the testing team in bug resolution and implementation of manual tests to ensure the final product's quality after the development phase.",
-          "Collaborated with different departments to improve workflow efficiency and internal communication.",
-          "I was hired just to help to delivery the project in time. Also I was keeping my skills up to date."
-        ]
-      }
-    ]
   },
   "personalProjects": {
     "id": "personal-projects",
-    "title":"Personal Projects",
-    "description": "Some of my personal projects.",
+    "title": "Personal Projects",
+    "description": "Some of my personal project ideas",
     "projects": [
       {
         "title": "Rollers Hub",
@@ -90,10 +48,56 @@
       }
     ]
   },
+  "workingExperiences": {
+    "id": "professional-experiences",
+    "title": "Professional Experiences",
+    "description": "My most recent experiences",
+    "experiences": [
+      {
+        "company": "Xgrow",
+        "role": "Senior Frontend Developer",
+        "duration": "June 2021 - December 2021",
+        "location": "Orlando, USA (Remote)",
+        "tasks": [
+          "Led a team of three frontend developers, a tester, and a designer.",
+          "Solved various technical issues and collaborated on building a new module for the student platform.",
+          "Used agile methodologies to plan and execute effective sprints, documenting processes on Confluence and tracking tasks in Jira.",
+          "Managed to eliminate all bugs in the existing application, allowing for the delivery of new features in record time.",
+          "Developed innovative and effective solutions through idea exchange and experience sharing, before tools like ChatGPT existed."
+        ]
+      },
+      {
+        "company": "Confidential",
+        "role": "Test Automation Developer",
+        "duration": "January 2022 - January 2024",
+        "location": "Portland, USA (Remote)",
+        "tasks": [
+          "Received an offer to work at an American software house with a client in the fiduciary sector, where I stayed for 2 years.",
+          "Focused primarily on test automation and quality control, using tools like Cypress and automated testing frameworks.",
+          "Developed and maintained automation scripts to ensure test consistency and efficiency, contributing to the client's software stability.",
+          "Worked in a high-security environment, adhering to strict data confidentiality and integrity protocols.",
+          "Handled at least two projects simultaneously. With a team of at least six developers and two testers."
+        ]
+      },
+      {
+        "company": "MT Corp (CRM Project)",
+        "role": "Temporary Frontend Developer",
+        "duration": "July 2023 - December 2023",
+        "location": "Piracicaba, Brazil (Remote)",
+        "tasks": [
+          "Worked on a temporary contract in a CRM project, contributing to the final development phase of the application.",
+          "Participated in building several system modules, ensuring the integration and functionality of each component.",
+          "Assisted the testing team in bug resolution and implementation of manual tests to ensure product quality after the development phase.",
+          "Collaborated with different departments to improve workflow efficiency and internal communication.",
+          "Hired specifically to help deliver the project on time. Also kept my skills up to date."
+        ]
+      }
+    ]
+  },
   "technologiesAndTools": {
     "id": "technologies-and-tools",
     "title": "Technologies and Tools",
-    "description": "A list with my core skills.",
+    "description": "Some of the tools I have worked with",
     "list": [
       "JavaScript",
       "TypeScript",
@@ -136,7 +140,7 @@
   "contacts": {
     "id": "contacts",
     "title": "Contacts",
-    "description": "My contacts and social medias",
+    "description": "My contacts and social media",
     "email": "hugoleonardo.dev@gmail.com",
     "phone": "+5531999699361",
     "linkedin": "https://www.linkedin.com/in/hugo-leonardo-1b94592b1/",

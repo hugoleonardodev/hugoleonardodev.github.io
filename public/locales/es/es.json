@@ -1,1014 +1,149 @@
 {
-  "header": {
-    "nav": {
-      "home": "Início",
-      "groups": "Grupos",
-      "events": "Eventos",
-      "places": "Lugares",
-      "maps": "Mapas",
-      "quickNav": "Navegação Rápida",
-      "news": "Notícias",
-      "login": "Entrar",
-      "register": "Cadastrar",
-      "logout": "Sair",
-      "store": "Loja",
-      "blog": "Blog",
-      "about": "Sobre",
-      "jobs": "Trabalhos",
-      "announcements": "Anúncios",
-      "contact": "Contato"
+  "navigation": [
+    {
+      "title": "Sobre Mí",
+      "href": "#sobre-mi"
+    },
+    {
+      "title": "Proyectos Personales",
+      "href": "#proyectos-personales"
+    },
+    {
+      "title": "Experiencias Profesionales",
+      "href": "#experiencias-profesionales"
+    },
+    {
+      "title": "Tecnologías y Herramientas",
+      "href": "#tecnologias-y-herramientas"
+    },
+    {
+      "title": "Contactos",
+      "href": "#contactos"
     }
+  ],
+  "aboutMe": {
+    "id": "sobre-mi",
+    "title": "Sobre Mí",
+    "name": "Hugo Leonardo",
+    "description": "Desarrollador Full Stack",
+    "hello": "Hola,",
+    "p1": "Mi nombre es Hugo Leonardo y soy Desarrollador Full Stack de Belo Horizonte, Brasil. Desde 2020, trabajo como desarrollador web con un fuerte enfoque en el desarrollo frontend. Lideré un equipo de tres desarrolladores frontend, un probador y un diseñador, donde construimos con éxito un nuevo producto y manteníamos uno existente. Nuestro trabajo implicaba una planificación meticulosa y priorización utilizando grooming de backlog al inicio de cada sprint. Documentábamos todo en Confluence y rastreábamos tareas con Jira y Gitflow. Durante mi tiempo, logramos eliminar todos los bugs en la aplicación existente, lo que nos permitió entregar un nuevo módulo para estudiantes en tiempo récord. Este rol mejoró mucho mis habilidades de gestión de proyectos y equipos.",
+    "p2": "En los últimos dos años, trabajé en una empresa estadounidense atendiendo a un cliente en el sector fiduciario, un campo complejo que involucra cuestiones de seguridad nacional. Inicialmente, me enfoqué en la automatización de pruebas usando Cypress y jQuery, lo que fue muy motivador. Sin embargo, cuando mi rol cambió a pruebas manuales, dejó de alinearse con mis aspiraciones de carrera como programador. Tras una cuidadosa consideración, decidí buscar nuevas oportunidades.",
+    "p3": "Recientemente, dediqué algunos meses a un proyecto personal full stack. Como patinador en mi tiempo libre, noté la falta de un sitio web de calidad para la comunidad de patinadores. La mayoría de los sitios disponibles estaban mal diseñados o eran solo tiendas en línea. Esto me llevó a crear Rollers Hub, una aplicación destinada a conectar patinadores de todo el mundo. Desarrollado con el apoyo de una comunidad de patinadores, continúo mejorando el sitio con nuevas funcionalidades en mi tiempo libre.",
+    "p4": "Actualmente, estoy buscando un puesto como desarrollador web full stack donde pueda aplicar mis habilidades y seguir creciendo profesionalmente. Tengo un interés especial en [Nombre de la Empresa] porque [razón específica relacionada con la empresa o el rol]. Estoy seguro de que mi experiencia en liderazgo de equipos, automatización de pruebas y desarrollo full stack me convierte en un candidato fuerte para este puesto. Estoy emocionado por trabajar con ustedes y ansioso por unirme a su equipo!",
+    "p5": "Gracias por su consideración. Espero con interés la posibilidad de discutir cómo puedo contribuir a su equipo.",
+    "regards": "Atentamente,",
+    "signature": "Hugo Leonardo - Desarrollador Full Stack"
   },
-  "navigationUser": {
-    "hello": "Olá",
-    "profile": "Perfil",
-    "group": "Grupo",
-    "event": "Evento",
-    "place": "Lugar",
-    "dashboard": "Painel",
-    "settings": "Configurações",
-    "logout": "Sair"
+  "personalProjects": {
+    "id": "proyectos-personales",
+    "title": "Proyectos Personales",
+    "description": "Algunas de mis ideas de proyectos personales",
+    "projects": [
+      {
+        "title": "Rollers Hub",
+        "description": "Una aplicación destinada a conectar patinadores de todo el mundo.",
+        "link": "https://www.rollershub.com",
+        "thumbnail": "/assets/en-home-thumb-resized.png"
+      }
+    ]
   },
-  "loginPage": {
-    "title": "Entrar",
-    "description": "Faça login na sua conta",
-    "h1": "Bem-vindo ao Rollers Hub",
-    "p1": "Digite seu email e senha para acessar sua conta.",
-    "userEmail": {
-      "title": "Seu email de usuário",
-      "label": "Digite seu email aqui",
-      "placeholder": "usuario@rollershub.com",
-      "required": "O email é obrigatório",
-      "invalid": "O email deve estar no formato usuario@email.com"
-    },
-    "userPassword": {
-      "title": "Sua senha",
-      "label": "Digite sua senha aqui",
-      "placeholder": "********",
-      "required": "A senha é obrigatória"
-    },
-    "submitLogin": "Entrar",
-    "forgotPassword": "Esqueceu sua senha?",
-    "showPassword": "Mostrar senha",
-    "hidePassword": "Ocultar senha",
-    "registerLink": {
-      "title": "Ainda não tem uma conta?",
-      "register": "register",
-      "text": "Registre-se aqui."
-    },
-    "forgotPasswordLink": {
-      "forgotPassword": "recuperação de senha",
-      "text": "Esqueceu sua senha?"
-    },
-    "hasError": "Email ou senha incorretos",
-    "tryAgainLater": "Ocorreu um erro ao fazer login. Por favor, tente novamente mais tarde."
-  },
-  "registerPage": {
-    "title": "Registrar",
-    "description": "Registre sua conta",
-    "h1": "Bem-vindo ao Rollers Hub",
-    "p1": "Digite seu email e senha para criar sua conta.",
-    "userName": {
-      "title": "Seu nome de usuário",
-      "label": "Digite seu nome de usuário",
-      "placeholder": "John Doe",
-      "required": "O nome é obrigatório",
-      "invalid": "O nome deve ter pelo menos 2 caracteres"
-    },
-    "userEmail": {
-      "title": "Seu email de usuário",
-      "label": "Digite um email de usuário válido",
-      "placeholder": "usuario@rollershub.com",
-      "required": "O email é obrigatório",
-      "invalid": "O email deve estar no formato usuario@email.com"
-    },
-    "userPassword": {
-      "title": "Sua senha",
-      "label": "Digite uma senha forte",
-      "placeholder": "$tr0ngP@ssw0rd",
-      "required": "A senha é obrigatória"
-    },
-    "userConfirmPassword": {
-      "title": "Confirme sua senha",
-      "label": "Repita sua senha",
-      "placeholder": "$tr0ngP@ssw0rd",
-      "required": "A confirmação da senha é obrigatória",
-      "invalid": "As senhas não coincidem"
-    },
-    "showPassword": "Mostrar senha",
-    "hidePassword": "Ocultar senha",
-    "termsAndConditions": "Termos e condições",
-    "andAlso": "e também",
-    "privacyPolicy": "Política de privacidade",
-    "readAndAgreed": "Eu li e concordo com:",
-    "submitRegister": "Crie sua conta gratuita",
-    "hasError": "Email ou senha incorretos",
-    "tryAgainLater": "Ocorreu um erro ao registrar. Por favor, tente novamente mais tarde."
-  },
-  "recoveryPage": {
-    "title": "Recuperação de senha",
-    "description": "Digite seu email e enviaremos um link para redefinir sua senha",
-    "h1": "Esqueceu sua senha?",
-    "p1": "Digite seu email e enviaremos um link para redefinir sua senha.",
-    "userEmail": {
-      "title": "Digite seu email",
-      "label": "Digite um email válido",
-      "placeholder": "usuario@rollershub.com",
-      "required": "O email é obrigatório",
-      "invalid": "O email deve estar no formato usuario@email.com"
-    },
-    "submitRecovery": "Enviar email de recuperação",
-    "hasError": "Email ou senha incorretos",
-    "tryAgainLater": "Ocorreu um erro ao enviar o email de recuperação. Por favor, tente novamente mais tarde.",
-    "registerLink": {
-      "title": "Ainda não tem uma conta?",
-      "register": "register",
-      "text": "Registre-se aqui."
-    }
-  },
-"homePage": {
-  "title": "Início",
-  "description": "Rollers Hub é um site inovador dedicado a conectar patinadores de todo o mundo. Aqui, os entusiastas da patinação encontram um espaço virtual onde podem compartilhar suas experiências, fazer novos amigos e expandir seus horizontes no mundo da patinação. Com uma interface intuitiva e um design moderno, Rollers Hub oferece uma experiência de usuário excepcional, permitindo que cada membro da comunidade aproveite ao máximo todos os recursos disponíveis.",
-  "h1": "Rollers Hub",
-  "h2": "Conectando patinadores de todo o mundo",
-  "p1": "Se você está procurando informações sobre patins para crianças, adultos, profissionais ou iniciantes, você veio ao lugar certo. Nosso site é o destino definitivo para tudo relacionado à patinação, desde dicas sobre onde comprar seus patins até lugares para patinar e grupos para se juntar. Continue lendo para descobrir como podemos ajudá-lo a explorar o mundo da patinação como nunca antes!",
-  "link": {
-    "about": "about",
-    "text": "Saiba mais sobre nós."
-  },
-  "profiles": {
-    "title": "Quem está usando o Rollers Hub?",
-    "description": "Uma das grandes vantagens do Rollers Hub é a capacidade de criar perfis e cartões personalizados. Cada usuário pode criar um perfil detalhado que reflete sua identidade como patinador, incluindo fotos, biografia e estatísticas de patinação. Além disso, os cartões de usuário funcionam como um cartão de visita digital, facilitando conexões e interações entre patinadores. Isso torna a busca por novos amigos e grupos ainda mais prática e divertida. Você também pode oferecer serviços como patinador profissional, instrutor de patinação, artista, fotógrafo, criador de conteúdo, entre outras opções.",
-    "h1": "Crie uma conta gratuita e comece a explorar!",
-    "link": {
-      "register": "register",
-      "text": "Crie sua conta gratuita agora!"
-    }
-  },
-  "groups": {
-    "title": "Encontre grupos de patinação profissionais ou casuais. Crie um grupo ou junte-se a um em sua região.",
-    "description": "O site também permite a criação e participação em grupos de patinação, promovendo um verdadeiro espírito de comunidade. Os usuários podem se juntar a grupos existentes ou criar novos com base em interesses comuns, localização geográfica ou nível de habilidade. Isso não apenas ajuda a formar laços mais fortes dentro da comunidade de patinadores, mas também facilita a organização de atividades em grupo, como sessões de treinamento e passeios coletivos.",
-    "p1": "Na seção de busca de grupos de patinadores do nosso site, você encontrará uma grande variedade de grupos dedicados a diferentes estilos e modalidades de patinação. Se você é apaixonado por patinação, seja para crianças, mulheres ou homens, temos grupos que combinam perfeitamente com seu perfil. Nossos grupos abrangem patinação artística, inline, quad, street, vertical e modalidades específicas como velocidade, slalom e enduro. Além disso, temos grupos focados em patinação urbana e wizard para aqueles que apreciam um estilo mais livre e radical. No Brasil, a comunidade de patinadores é vibrante e diversificada, e nossos grupos refletem essa riqueza, proporcionando um espaço para todos, incluindo PCD (pessoas com deficiência) que buscam acessibilidade e segurança no esporte.",
-    "p2": "Nossa plataforma é ideal para aqueles que desejam explorar diferentes modalidades como hóquei, velocidade, slalom, downhill, endurance, wizard skating ou simplesmente deslizar por diversão com amigos e família. Cada grupo oferece uma oportunidade única de aprendizado e crescimento, onde os membros compartilham dicas sobre equipamentos, técnicas de segurança e os melhores lugares para patinar. Os grupos são formados por pessoas que compartilham a mesma paixão pela patinação, criando um ambiente acolhedor e motivador para todos os níveis de habilidade, desde iniciantes até profissionais.",
-    "p3": "Nossa seção de busca de grupos de patinadores foi projetada para facilitar conexões entre patinadores em todo o Brasil. Ao se juntar a um grupo, você pode participar de eventos, sessões de treinamento e encontros, expandindo sua rede de amigos e parceiros de patinação. Além disso, a segurança é sempre uma prioridade, com diretrizes e discussões sobre o uso adequado de equipamentos de proteção. Se você tem paixão pela patinação e deseja se conectar com outras pessoas que compartilham o mesmo interesse, nossa plataforma é o lugar perfeito para começar. Junte-se à nossa comunidade, descubra novos grupos de patinadores e faça parte deste movimento crescente que reúne pessoas de todas as idades e estilos de vida em torno da paixão pela patinação.",
-    "h1": "Equipes e Grupos",
-    "link": {
-      "group": "grupo",
-      "text": "Saiba mais sobre grupos."
-    }
-  },
-  "events": {
-    "title": "Crie e compartilhe eventos. Mantenha-se atualizado sobre os últimos eventos de patinação.",
-    "description": "Além dos recursos sociais, o Rollers Hub é um recurso indispensável para aqueles que buscam novos lugares para patinar e eventos de patinação. Os usuários podem adicionar e compartilhar lugares onde gostam de patinar, incluindo descrições e avaliações, ajudando outros patinadores a descobrir novos destinos. A busca por eventos também é simplificada, permitindo que os membros encontrem e participem de competições, encontros e workshops em sua região ou em qualquer lugar do mundo.",
-    "p1": "Bem-vindo à seção de Eventos do nosso site, um espaço dedicado a todos os entusiastas da patinação, desde iniciantes até profissionais. Aqui, você encontrará uma grande variedade de eventos de patinação acontecendo ao redor do mundo, incluindo grandes cidades como São Paulo, Rio de Janeiro, Nova York, Londres, Buenos Aires, Montevidéu, Cidade do México, Bogotá, Madrid e Paris. Se você é um entusiasta de patinação sempre em busca de novos lugares para patinar, nosso calendário de eventos é o lugar perfeito para descobrir os melhores pontos de encontro para patinadores de todas as modalidades.",
-    "p2": "Em nossa seção de Eventos, você pode buscar eventos específicos usando vários filtros. Qualquer que seja sua modalidade favorita, como velocidade, slalom, inline, quad, street, vertical ou até mesmo patinação no gelo, temos eventos listados para todos os gostos. Além disso, destacamos eventos infantis, femininos e masculinos, garantindo que toda a família possa participar e se divertir. Com informações detalhadas sobre cada evento, você saberá exatamente onde patinar e quais equipamentos são necessários para garantir sua segurança.",
-    "p3": "Além de buscar eventos, você também pode adicionar novos eventos de patinação diretamente em nosso site. Seja você está organizando um tour de patinação, uma competição de hóquei ou um evento de patinação artística, nosso formulário de submissão é fácil de usar e permite que você compartilhe todas as informações importantes com a comunidade de patinadores. Receba atualizações por e-mail sobre o status do seu evento e garanta que ele tenha a visibilidade que merece entre os patinadores no Brasil e no mundo.",
-    "p4": "Estamos comprometidos com a acessibilidade e a infraestrutura para nossos eventos. Portanto, nossa plataforma também destaca eventos que oferecem recursos de acessibilidade para pessoas com deficiência (PCD), garantindo que todos possam participar e desfrutar das atividades. Queremos que nossos eventos sejam inclusivos, seguros e divertidos para todos, independentemente de suas habilidades ou necessidades especiais.",
-    "p5": "Finalmente, nossa seção de Eventos é um verdadeiro ponto de encontro para patinadores de todas as idades e níveis de experiência. É o lugar ideal para encontrar novos amigos, participar de eventos empolgantes como a Operação Urbana, explorar novos locais de patinação e compartilhar sua paixão pelo esporte. Seja você um patinador amador ou profissional, nossa plataforma está aqui para apoiar sua jornada no mundo da patinação. Navegue em nossos eventos, adicione os seus próprios e junte-se à comunidade global de patinadores!"
-  },
-  "places": {
-    "title": "Os melhores lugares para patinar. Crie uma página e conte sobre o lugar ou encontre um local em sua região.",
-    "description": "O Rollers Hub se destaca pelo uso de tecnologia de ponta, garantindo uma plataforma segura, rápida e confiável. A equipe por trás do site está constantemente atualizando e melhorando o sistema, usando as mais recentes ferramentas de desenvolvimento web para proporcionar a melhor experiência possível aos seus usuários. Desde design responsivo até recursos interativos, cada detalhe do Rollers Hub foi cuidadosamente planejado para atender às necessidades da comunidade global de patinadores.",
-    "p1": "A seção Onde Patinar do nosso site é um verdadeiro guia global para todos os entusiastas da patinação, desde iniciantes até os mais experientes. Nesta seção, você encontrará lugares para patinar em diversas modalidades, como urbana, wizard, velocidade, slalom, artística, inline, quad, street, vertical, enduro, distância e hóquei. Seja no Brasil, destacando Rio de Janeiro e São Paulo, ou em cidades internacionais como Nova York, Paris, Buenos Aires e Madrid, nossa seção fornece todas as informações necessárias para você aproveitar ao máximo sua experiência sobre rodas.",
-    "p2": "Além de listar lugares incríveis para patinar, nosso site permite que os usuários adicionem novos lugares, compartilhem suas experiências e favoritem seus pontos preferidos. A inclusão de novos lugares pelos usuários enriquece constantemente nosso banco de dados, promovendo uma comunidade ativa e colaborativa. Para cada lugar, você encontrará informações detalhadas sobre infraestrutura, segurança, acessibilidade para PCD, horários de funcionamento e dicas práticas para aproveitar ao máximo sua visita.",
-    "p3": "Nosso mapa interativo é uma ferramenta valiosa que facilita a busca por novos lugares para patinar, permitindo que você filtre as opções por modalidade, localização e avaliação. Este recurso é especialmente útil para aqueles que viajam com frequência e desejam explorar novos destinos sobre rodas. Com avaliações e comentários de outros patinadores, você terá uma visão completa do que esperar antes de visitar qualquer lugar, garantindo uma experiência positiva e segura.",
-    "p4": "A infraestrutura para patinação é fundamental para garantir a segurança e o conforto dos patinadores, e nossa seção Onde Patinar destaca os melhores lugares com base nesses critérios. Quer você esteja procurando pistas de patinação, parques, quadras ou ruas tranquilas, nosso site oferece uma variedade de opções para todos os níveis de habilidade. Nossa missão é promover a patinação como uma atividade acessível e prazerosa para todos, independentemente de idade ou nível de habilidade.",
-    "p5": "Além disso, nossa seção inclui uma subcategoria dedicada a lugares para crianças, garantindo que os pais encontrem locais seguros e adequados para introduzir os pequenos no mundo da patinação. Com dicas sobre equipamentos de proteção e instruções para iniciantes, ajudamos as famílias a criar memórias inesquecíveis enquanto praticam essa atividade saudável e divertida juntos.",
-    "p6": "Em resumo, a seção Onde Patinar do Rollers Hub é um recurso essencial para todos os patinadores. Com uma vasta gama de opções e uma comunidade ativa que contribui com novas informações regularmente, nosso site é o seu guia definitivo para descobrir os melhores lugares para patinar. Explore nosso mapa, adicione seus próprios lugares e compartilhe suas experiências com outros patinadores. Junte-se a nós e descubra um mundo cheio de possibilidades sobre rodas!"
-  },
-  "news": {
-    "title": "Últimas Notícias e Anúncios",
-    "description": "Últimas notícias sobre o site. Anúncios de eventos, competições e muito mais. Explore Rollers Hub e descubra um mundo de possibilidades sobre rodas!",
-    "p1": "A seção de Notícias do nosso site é um ponto de encontro vibrante para todos os entusiastas do skate, desde iniciantes até profissionais. Aqui você encontrará uma variedade de conteúdos abrangendo todas as modalidades de patinação, como inline, quad, street e vertical. Nossa equipe e colaboradores são dedicados a trazer informações atualizadas sobre eventos de skate, como a emocionante Operação Urbana, onde os skatistas se reúnem para demonstrações de habilidades em slalom, enduro e até mesmo hockey. Além disso, destacamos aspectos de segurança e os melhores equipamentos para garantir uma experiência segura e divertida para todos.",
-    "p2": "Nossas notícias também cobrem dicas de onde patinar nas cidades, com um foco especial em acessibilidade e infraestrutura para todos, incluindo pessoas com deficiência (PCD). Com a crescente popularidade do skate, é essencial que todos saibam onde encontrar espaços adequados e seguros para a prática. Compartilhamos informações sobre lugares que oferecem excelentes condições para skatistas de todos os níveis, sejam amadores ou profissionais, e de todas as idades, desde crianças até adultos.",
-    "p3": "Além dos locais para patinação, nossa seção de notícias também promove grupos e comunidades de skate que organizam passeios e eventos regulares. Esses encontros são uma ótima oportunidade para socializar, trocar experiências e aprimorar habilidades. Eventos de skate, como competições e apresentações de patinação artística, recebem atenção especial, trazendo a emoção e a beleza do esporte para nossos leitores. Fique ligado em nossas atualizações para não perder nenhum desses eventos.",
-    "p4": "Para patinadores femininos e masculinos, oferecemos artigos que abordam as especificidades de cada grupo, incluindo treinamento personalizado e eventos dedicados. Estamos comprometidos em apoiar todos os segmentos da comunidade de skate, incentivando a participação e a inclusão em todas as atividades. Nossa missão é criar um espaço onde todos possam compartilhar suas paixões e crescer juntos como uma comunidade unida.",
-    "p5": "Finalmente, nossa seção de notícias também se concentra em destacar inovações e tendências no mundo do skate. Desde novas técnicas e estilos, como speed e wizard, até os lançamentos mais recentes de equipamentos que melhoram o desempenho e a segurança. Mantemos nossos leitores informados sobre tudo o que é relevante no universo do skate, ajudando-os a se manterem atualizados e bem preparados para qualquer desafio. Siga-nos e faça parte desta emocionante jornada no mundo do skate."
-  }
-},
-"groupPage": {
-  "userNav": {
-    "userProfile": "Perfil",
-    "userGroup": "Grupo",
-    "userEvent": "Evento",
-    "userPlace": "Lugar",
-    "userDashboard": "Painel",
-    "userNews": "Notícias",
-    "userLogout": "Sair"
-  },
-  "groupProfile": {
-    "groupStepper": {
-      "completeProfile": "Complete o Perfil",
-      "createEvent": "Criar grupo",
-      "shareEvent": "Compartilhar com amigos"
-    },
-    "groupForm": {
-      "h1": "Criar grupo",
-      "p1": "Crie um novo grupo ou adicione um existente. As pessoas buscarão grupos por regiões e cidades. Você pode editá-lo mais tarde.",
-      "p2": "Descreva o grupo corretamente. Será mais fácil para outros encontrá-lo. Você também pode adicionar fotos do grupo.",
-      "p3": "Se você não gostar da descrição do seu grupo, pode editá-la mais tarde.",
-      "groupName": {
-        "title": "Nome do Grupo",
-        "label": "Digite o nome do grupo",
-        "placeholder": "Meu Grupo",
-        "required": "O nome do grupo é obrigatório",
-        "invalid": "O nome do grupo deve ter pelo menos 2 caracteres"
-      },
-      "groupSocialMedia": {
-        "title": "Redes Sociais do Grupo",
-        "label": "Digite as redes sociais do grupo",
-        "placeholder": "Facebook, Twitter, etc",
-        "required": "As redes sociais do grupo são obrigatórias",
-        "invalid": "As redes sociais do grupo devem ter pelo menos 2 caracteres"
-      },
-      "groupPhone": {
-        "title": "Telefone do Grupo",
-        "label": "Digite o telefone do grupo",
-        "placeholder": "123456789",
-        "required": "O telefone do grupo é obrigatório",
-        "invalid": "O telefone do grupo deve ter pelo menos 2 caracteres"
-      },
-      "groupType": {
-        "title": "Tipo de Grupo",
-        "label": "Selecione o tipo de grupo",
-        "placeholder": "Loja, Empresa, etc",
-        "options": {
-          "friends": "Amigos",
-          "team": "Equipe",
-          "squad": "Esquadrão",
-          "company": "Empresa",
-          "store": "Loja",
-          "artistic": "Artístico",
-          "project": "Projeto",
-          "school": "Escola",
-          "announcer": "Anunciador",
-          "press": "Imprensa",
-          "content": "Conteúdo"
-        },
-        "required": "O tipo de grupo é obrigatório",
-        "invalid": "O tipo de grupo deve ter pelo menos 2 caracteres"
-      },
-      "groupCategories": {
-        "title": "Categorias do Grupo",
-        "label": "Selecione as categorias do grupo",
-        "placeholder": "Patinação, Inline, etc",
-        "options": {
-          "pwd": "PcD",
-          "men": "Homens",
-          "women": "Mulheres",
-          "kids": "Crianças",
-          "senior": "Sênior",
-          "all": "Todos",
-          "other": "Outro"
-        }
-      },
-      "groupDescription": {
-        "title": "Descrição do Grupo",
-        "label": "Digite a descrição do grupo",
-        "placeholder": "Grupo sempre treinando junto."
-      },
-      "groupAddress": {
-        "title": "Endereço do Grupo",
-        "label": "Digite o endereço do grupo",
-        "placeholder": "Rua, número, bairro, etc",
-        "required": "O endereço do grupo é obrigatório",
-        "invalid": "O endereço do grupo deve ter pelo menos 2 caracteres"
-      },
-      "groupLogo": {
-        "title": "Logo do Grupo",
-        "label": "Digite um link com a imagem do grupo",
-        "placeholder": "https://example.com/image.jpg",
-        "required": "A foto do perfil é obrigatória",
-        "invalid": "A foto do perfil deve ser uma URL"
-      },
-      "helpWithPicture": {
-        "title": "Termos de uso",
-        "button": "Ajuda com links de imagens",
-        "h1": "Não podemos armazenar imagens em nosso servidor",
-        "h2": "Para um melhor desempenho, recomendamos fortemente o upload de suas imagens em um provedor de nuvem",
-        "recommended": [
-          {
-            "title": "ImageBB",
-            "link": "https://imagebb.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Postimages",
-            "link": "https://postimages.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Github",
-            "link": "https://github.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          }
+  "workingExperiences": {
+    "id": "experiencias-profesionales",
+    "title": "Experiencias Profesionales",
+    "description": "Mis experiencias más recientes",
+    "experiences": [
+      {
+        "company": "Xgrow",
+        "role": "Desarrollador Frontend Senior",
+        "duration": "Junio 2021 - Diciembre 2021",
+        "location": "Orlando, EE.UU. (Remoto)",
+        "tasks": [
+          "Lideré un equipo de tres desarrolladores frontend, un probador y un diseñador.",
+          "Resolvió diversos problemas técnicos y colaboré en la construcción de un nuevo módulo para los estudiantes de la plataforma.",
+          "Utilicé metodologías ágiles para planificar y ejecutar sprints efectivos, documentando procesos en Confluence y rastreando tareas en Jira.",
+          "Logré eliminar todos los bugs en la aplicación existente, lo que permitió la entrega de nuevas funcionalidades en tiempo récord.",
+          "Desarrollé soluciones innovadoras y efectivas a través del intercambio de ideas y experiencias, antes de la existencia de herramientas como ChatGPT."
         ]
       },
-      "groupCountry": {
-        "title": "País do Grupo",
-        "label": "Digite e selecione o país do grupo",
-        "placeholder": "Brasil, EUA, México, etc",
-        "required": "O país é obrigatório"
-      },
-      "groupState": {
-        "title": "Estado/Província do Grupo",
-        "label": "Digite e selecione o estado/província do grupo",
-        "placeholder": "Califórnia, Texas, etc",
-        "required": "O estado/província é obrigatório"
-      },
-      "groupCity": {
-        "title": "Cidade do Grupo",
-        "label": "Digite e selecione a cidade do grupo",
-        "placeholder": "São Paulo, Nova York, etc",
-        "required": "A cidade é obrigatória"
-      },
-      "groupLocation": {
-        "title": "Localização do Grupo",
-        "label": "Digite o local do grupo no Google Maps",
-        "placeholder": "-33.8688135, 151.2093784",
-        "required": "A localização do grupo é obrigatória"
-      },
-      "helpWithLocation": {
-        "button": "Ajuda com o local no Google Maps",
-        "title": "Termos de uso",
-        "h1": "Não podemos armazenar a localização em nosso servidor",
-        "p1": "Copie e cole o local do Google Maps:",
-        "li1": "Clique no local com o botão direito do mouse",
-        "li2": "Clique no valor do local com o botão esquerdo",
-        "li3": "Copie e cole o valor do local no campo de entrada",
-        "understood": "Entendi",
-        "goToGoogle": "Ir para o Google Maps"
-      },
-      "startedAt": {
-        "title": "Data de Fundação do Grupo",
-        "label": "Selecione o dia em que o grupo foi fundado",
-        "required": "A data de fundação é obrigatória"
-      },
-      "submit": "Adicionar evento",
-      "helpWithImages": "Ajuda com links de imagens",
-      "hasError": "Erro na validação do formulário",
-      "tryAgainLater": "Ocorreu um erro ao salvar o perfil. Por favor, tente novamente mais tarde."
-    }
-  }
-},
-"eventPage": {
-  "userNav": {
-    "userProfile": "Perfil",
-    "userGroup": "Grupo",
-    "userEvent": "Evento",
-    "userPlace": "Lugar",
-    "userDashboard": "Painel",
-    "userNews": "Notícias",
-    "userLogout": "Sair"
-  },
-  "eventProfile": {
-    "eventStepper": {
-      "completeProfile": "Complete o Perfil",
-      "createEvent": "Criar evento",
-      "shareEvent": "Compartilhar com amigos"
-    },
-    "eventForm": {
-      "h1": "Criar evento",
-      "p1": "Crie um novo evento ou adicione um existente. As pessoas buscarão eventos por regiões e cidades. Você pode editá-lo mais tarde.",
-      "p2": "Descreva o evento corretamente. Será mais fácil para outros encontrá-lo. Você também pode adicionar fotos do evento.",
-      "p3": "Se você não gostar da descrição do seu evento, pode editá-la mais tarde.",
-      "eventName": {
-        "title": "Nome do Evento",
-        "label": "Digite o nome do evento",
-        "placeholder": "Meu evento",
-        "required": "O nome do evento é obrigatório",
-        "invalid": "O nome do evento deve ter pelo menos 2 caracteres"
-      },
-      "eventType": {
-        "title": "Tipo de Evento",
-        "label": "Selecione o tipo de evento",
-        "placeholder": "Urbano, Tour, etc",
-        "options": [
-          { "value": "promotional", "description": "Promocional" },
-          { "value": "artistic", "description": "Artístico" },
-          { "value": "project", "description": "Projeto Social" },
-          { "value": "competition", "description": "Torneio" },
-          { "value": "tour", "description": "Passeio Urbano" },
-          { "value": "meeting", "description": "Encontro" },
-          { "value": "lecture", "description": "Palestra" },
-          { "value": "classes", "description": "Aulas" },
-          { "value": "public-audience", "description": "Audiência Pública" }
-        ],
-        "required": "O tipo de evento é obrigatório",
-        "invalid": "O tipo de evento deve ter pelo menos 2 caracteres"
-      },
-      "eventDescription": {
-        "title": "Descrição do Evento",
-        "label": "Digite a descrição do evento",
-        "placeholder": "O evento pode ter restrições de tempo e data."
-      },
-      "eventAddress": {
-        "title": "Endereço do Evento",
-        "label": "Digite o endereço do evento",
-        "placeholder": "Rua, número, bairro, etc",
-        "required": "O endereço do evento é obrigatório",
-        "invalid": "O endereço do evento deve ter pelo menos 2 caracteres"
-      },
-      "eventArt": {
-        "title": "Banner ou Folder do Evento",
-        "label": "Digite um link com a imagem do evento",
-        "placeholder": "https://example.com/image.jpg",
-        "required": "A foto do perfil é obrigatória",
-        "invalid": "A foto do perfil deve ser uma URL"
-      },
-      "helpWithPicture": {
-        "title": "Termos de uso",
-        "button": "Ajuda com links de imagens",
-        "h1": "Não podemos armazenar imagens em nosso servidor",
-        "h2": "Para um melhor desempenho, recomendamos fortemente o upload de suas imagens em um provedor de nuvem",
-        "recommended": [
-          {
-            "title": "ImageBB",
-            "link": "https://imagebb.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Postimages",
-            "link": "https://postimages.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Github",
-            "link": "https://github.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          }
+      {
+        "company": "Confidencial",
+        "role": "Desarrollador de Automatización de Pruebas",
+        "duration": "Enero 2022 - Enero 2024",
+        "location": "Portland, EE.UU. (Remoto)",
+        "tasks": [
+          "Recibí una oferta para trabajar en una software house estadounidense con un cliente en el sector fiduciario, donde permanecí durante 2 años.",
+          "Me enfoqué principalmente en la automatización de pruebas y control de calidad, utilizando herramientas como Cypress y frameworks de pruebas automatizadas.",
+          "Desarrollé y mantuve scripts de automatización para garantizar la consistencia y eficiencia de las pruebas, contribuyendo a la estabilidad del software del cliente.",
+          "Trabajé en un entorno de alta seguridad, adhiriéndome a protocolos rigurosos de confidencialidad e integridad de datos.",
+          "Manejé al menos dos proyectos simultáneamente. Con un equipo de al menos seis desarrolladores y dos probadores."
         ]
       },
-      "eventCountry": {
-        "title": "Seu país",
-        "label": "Digite e selecione seu país",
-        "placeholder": "Brasil, EUA, México, etc",
-        "required": "O país é obrigatório"
-      },
-      "eventState": {
-        "title": "Seu estado/província",
-        "label": "Digite e selecione seu estado",
-        "placeholder": "Califórnia, Texas, etc",
-        "required": "O estado/província é obrigatório"
-      },
-      "eventCity": {
-        "title": "Sua cidade",
-        "label": "Digite e selecione sua cidade",
-        "placeholder": "São Paulo, Nova York, etc",
-        "required": "A cidade é obrigatória"
-      },
-      "eventLocation": {
-        "title": "Localização do Evento",
-        "label": "Digite o local do evento no Google Maps",
-        "placeholder": "-33.8688135, 151.2093784",
-        "required": "A localização do evento é obrigatória"
-      },
-      "helpWithLocation": {
-        "button": "Ajuda com o local no Google Maps",
-        "title": "Termos de uso",
-        "h1": "Não podemos armazenar a localização em nosso servidor",
-        "p1": "Copie e cole o local do Google Maps:",
-        "li1": "Clique no local com o botão direito do mouse",
-        "li2": "Clique no valor do local com o botão esquerdo",
-        "li3": "Copie e cole o valor do local no campo de entrada",
-        "understood": "Entendi",
-        "goToGoogle": "Ir para o Google Maps"
-      },
-      "eventDate": {
-        "title": "Data do Evento",
-        "label": "Selecione a data do evento",
-        "placeholder": "2022-01-01",
-        "required": "A data do evento é obrigatória"
-      },
-      "eventRecurrency": {
-        "title": "Recorrência do Evento",
-        "label": "Selecione a recorrência do evento",
-        "placeholder": "Diariamente, Semanalmente, etc",
-        "options": [
-          { "value": "none", "description": "Nenhuma" },
-          { "value": "daily", "description": "Diária" },
-          { "value": "weekly", "description": "Semanal" },
-          { "value": "biweekly", "description": "Quinzenal" },
-          { "value": "monthly", "description": "Mensal" },
-          { "value": "yearly", "description": "Anual" },
-          { "value": "one-time", "description": "Uma vez" },
-          { "value": "custom", "description": "Personalizada" }
-        ],
-        "invalid": "A recorrência do evento deve ter pelo menos 2 caracteres",
-        "required": "A recorrência do evento é obrigatória"
-      },
-      "startedAt": {
-        "title": "Início na Patinação",
-        "label": "Selecione quando você começou a patinar",
-        "required": "O início na patinação é obrigatório"
-      },
-      "startsAt": {
-        "title": "Início às:",
-        "label": "HH:MM",
-        "placeholder": "14:00",
-        "required": "O início na patinação é obrigatório"
-      },
-      "endsAt": {
-        "title": "Termina às:",
-        "label": "HH:MM",
-        "placeholder": "16:20",
-        "required": "O início na patinação é obrigatório"
-      },
-      "submit": "Adicionar evento",
-      "helpWithImages": "Ajuda com links de imagens",
-      "hasError": "Erro na validação do formulário",
-      "tryAgainLater": "Ocorreu um erro ao salvar o perfil. Por favor, tente novamente mais tarde."
-    }
-  }
-},
-"placePage": {
-  "userNav": {
-    "userProfile": "Perfil",
-    "userGroup": "Grupo",
-    "userEvent": "Evento",
-    "userPlace": "Lugar",
-    "userDashboard": "Painel",
-    "userNews": "Notícias",
-    "userLogout": "Sair"
-  },
-  "placeProfile": {
-    "placeStepper": {
-      "completeProfile": "Complete o Perfil",
-      "createPlace": "Adicionar lugar",
-      "sharePlace": "Compartilhar com amigos"
-    },
-    "placeForm": {
-      "h1": "Adicionar um lugar para patinação",
-      "p1": "Adicione seu lugar favorito ao Rollers Hub. Você pode escrever uma descrição legal e compartilhá-la com seus amigos e familiares. Promova seus lugares favoritos e convide amigos para se juntar a você.",
-      "p2": "Descreva o lugar corretamente. Será mais fácil para os outros encontrarem. O lugar tem algumas restrições de horário e dias? Informe-nos. Você também pode adicionar fotos e vídeos do lugar.",
-      "p3": "Se você não gostar da descrição do seu lugar, pode editá-la mais tarde.",
-      "placeName": {
-        "title": "Nome do Lugar",
-        "label": "Digite o nome do seu lugar",
-        "placeholder": "Meu lugar",
-        "required": "O nome do lugar é obrigatório",
-        "invalid": "O nome do lugar deve ter pelo menos 2 caracteres"
-      },
-      "placeType": {
-        "title": "Tipo de Lugar",
-        "label": "Selecione o tipo de lugar",
-        "placeholder": "Skatepark, pista, etc",
-        "options": [
-          { "value": "skatepark", "description": "Skatepark" },
-          { "value": "track", "description": "Pista" },
-          { "value": "vertical", "description": "Vertical" },
-          { "value": "street", "description": "Street" },
-          { "value": "avenue", "description": "Avenida" },
-          { "value": "road", "description": "Estrada" },
-          { "value": "hill", "description": "Morro" },
-          { "value": "square", "description": "Praça" },
-          { "value": "park", "description": "Parque" },
-          { "value": "stadium", "description": "Estádio" },
-          { "value": "parking", "description": "Estacionamento" },
-          { "value": "bike-lane", "description": "Ciclovia" },
-          { "value": "ice-rink", "description": "Pista de gelo" }
-        ],
-        "required": "O tipo de lugar é obrigatório",
-        "invalid": "O tipo de lugar deve ter pelo menos 2 caracteres"
-      },
-      "placeDescription": {
-        "title": "Descrição do Lugar",
-        "label": "Digite a descrição do seu lugar",
-        "placeholder": "O lugar pode ter restrições de horário e data."
-      },
-      "placeAddress": {
-        "title": "Endereço do Lugar",
-        "label": "Digite o endereço do seu lugar",
-        "placeholder": "Rua, número, bairro, etc",
-        "required": "O endereço do lugar é obrigatório",
-        "invalid": "O endereço do lugar deve ter pelo menos 2 caracteres"
-      },
-      "placeCaracteristics": {
-        "title": "Características do Lugar",
-        "label": "Digite e selecione as características do seu lugar",
-        "private": "É privado?",
-        "public": "É público?",
-        "outdoor": "É ao ar livre?",
-        "indoor": "É coberto?",
-        "adults": "Somente adultos?",
-        "children": "Crianças?",
-        "yes": "Aceita pets?",
-        "no": "Não aceita pets?",
-        "required": "As características do lugar são obrigatórias",
-        "invalid": "As características do lugar devem ter pelo menos 2 caracteres"
-      },
-      "recommendedGears": {
-        "title": "Equipamentos Recomendados",
-        "label": "Digite e selecione seus equipamentos recomendados",
-        "inline": "Inline",
-        "speed": "Velocidade",
-        "wizard": "Wizard",
-        "street": "Street",
-        "quad": "Quad",
-        "hockey": "Hóquei",
-        "blades": "Blades",
-        "other": "Outro"
-      },
-      "placeInfraestructure": {
-        "title": "Infraestrutura do Lugar",
-        "label": "Digite e selecione a infraestrutura do seu lugar",
-        "parking": "Estacionamento",
-        "wifi": "Wifi",
-        "bathrooms": "Banheiros",
-        "restaurants": "Restaurantes",
-        "transportation": "Transporte",
-        "other": "Outro"
-      },
-      "placePicture": {
-        "title": "Foto do Lugar",
-        "label": "Digite um link com a foto do seu perfil",
-        "placeholder": "https://example.com/image.jpg",
-        "required": "A foto do perfil é obrigatória",
-        "invalid": "A foto do perfil deve ser uma URL"
-      },
-      "helpWithPicture": {
-        "button": "Ajuda com links de imagens",
-        "title": "Termos de uso",
-        "h1": "Não podemos armazenar imagens em nosso servidor",
-        "h2": "Para um melhor desempenho, recomendamos fortemente o upload de suas imagens em um provedor de nuvem",
-        "recommended": [
-          {
-            "title": "ImageBB",
-            "link": "https://imagebb.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Postimages",
-            "link": "https://postimages.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Github",
-            "link": "https://github.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          }
+      {
+        "company": "MT Corp (Proyecto CRM)",
+        "role": "Desarrollador Frontend Temporal",
+        "duration": "Julio 2023 - Diciembre 2023",
+        "location": "Piracicaba, Brasil (Remoto)",
+        "tasks": [
+          "Trabajé en un contrato temporal en un proyecto de CRM, contribuyendo a la fase final de desarrollo de la aplicación.",
+          "Participé en la construcción de varios módulos del sistema, asegurando la integración y funcionalidad de cada componente.",
+          "Asistí al equipo de pruebas en la resolución de bugs e implementación de pruebas manuales para garantizar la calidad del producto final después de la fase de desarrollo.",
+          "Colaboré con diferentes departamentos para mejorar la eficiencia del flujo de trabajo y la comunicación interna.",
+          "Fui contratado específicamente para ayudar a entregar el proyecto a tiempo. También mantuve mis habilidades actualizadas."
         ]
-      },
-      "placeAvatar": {
-        "title": "Avatar do Lugar",
-        "label": "Digite um link com a foto do seu avatar",
-        "placeholder": "https://example.com/image.jpg",
-        "required": "A foto do perfil é obrigatória",
-        "invalid": "A foto do perfil deve ser uma URL"
-      },
-      "placeCountry": {
-        "title": "Seu país",
-        "label": "Digite e selecione seu país",
-        "placeholder": "Brasil, EUA, México, etc",
-        "required": "O país é obrigatório"
-      },
-      "placeState": {
-        "title": "Seu estado/província",
-        "label": "Digite e selecione seu estado",
-        "placeholder": "Califórnia, Texas, etc",
-        "required": "O estado/província é obrigatório"
-      },
-      "placeCity": {
-        "title": "Sua cidade",
-        "label": "Digite e selecione sua cidade",
-        "placeholder": "São Paulo, Nova York, etc",
-        "required": "A cidade é obrigatória"
-      },
-      "placeLocation": {
-        "title": "Localização do Lugar",
-        "label": "Digite o local do lugar no Google Maps",
-        "placeholder": "-33.8688135, 151.2093784",
-        "required": "A localização do lugar é obrigatória"
-      },
-      "helpWithLocation": {
-        "button": "Ajuda com o local no Google Maps",
-        "title": "Termos de uso",
-        "h1": "Não podemos armazenar a localização em nosso servidor",
-        "p1": "Copie e cole o local do Google Maps:",
-        "li1": "Clique no local com o botão direito do mouse",
-        "li2": "Clique no valor do local com o botão esquerdo",
-        "li3": "Copie e cole o valor do local no campo de entrada",
-        "understood": "Entendi",
-        "goToGoogle": "Ir para o Google Maps"
-      },
-      "startedAt": {
-        "title": "Início na Patinação",
-        "label": "Selecione quando você começou a patinar",
-        "required": "O início na patinação é obrigatório"
-      },
-      "submit": "Adicionar lugar",
-      "helpWithImages": "Ajuda com links de imagens",
-      "hasError": "Erro na validação do formulário",
-      "tryAgainLater": "Ocorreu um erro ao salvar o perfil. Por favor, tente novamente mais tarde."
-    }
-  }
-},
-"userPage": {
-  "userNav": {
-    "userProfile": "Perfil",
-    "userGroup": "Grupo",
-    "userEvent": "Evento",
-    "userPlace": "Lugar",
-    "userDashboard": "Painel",
-    "userNews": "Notícias",
-    "userLogout": "Sair"
+      }
+    ]
   },
-  "userProfile": {
-    "userStepper": {
-      "createAccount": "Criar Conta",
-      "completeProfile": "Completar Perfil",
-      "shareProfile": "Compartilhar com amigos"
-    },
-    "userForm": {
-      "h1": "Complete seu perfil",
-      "p1": "Após completar seu perfil, você poderá criar ou seguir um grupo, acompanhar eventos e lugares, compartilhá-lo com seus amigos e familiares. Nós não compartilhamos suas informações sensíveis com terceiros.",
-      "p2": "Usaremos suas informações apenas para criar e compartilhar conteúdo relevante para você. Não venderemos nem compartilharemos suas informações com terceiros.",
-      "p3": "Você sempre pode editar seu perfil a qualquer momento.",
-      "userPicture": {
-        "title": "Foto de Perfil",
-        "label": "Digite um link com sua foto de perfil",
-        "placeholder": "https://example.com/image.jpg",
-        "required": "A foto de perfil é obrigatória",
-        "invalid": "A foto de perfil deve ser uma URL"
-      },
-      "helpWithPicture": {
-        "button": "Help with profile picture",
-        "title": "Termos de uso",
-        "h1": "Não podemos armazenar imagens em nosso servidor",
-        "h2": "Para um melhor desempenho, recomendamos fortemente o upload de suas imagens em um provedor de nuvem",
-        "recommended": [
-          {
-            "title": "ImageBB",
-            "link": "https://imagebb.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Postimages",
-            "link": "https://postimages.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          },
-          {
-            "title": "Github",
-            "link": "https://github.com/",
-            "p1": "Você precisará criar uma conta com seu e-mail ou conta Google",
-            "p2": "Aqui está um exemplo de link de imagem:"
-          }
-        ]
-      },
-      "userAvatar": {
-        "title": "Avatar do Usuário",
-        "label": "Digite um link com a foto do seu avatar",
-        "placeholder": "https://example.com/image.jpg",
-        "required": "A foto do perfil é obrigatória",
-        "invalid": "A foto do perfil deve ser uma URL"
-      },
-      "userCountry": {
-        "title": "Seu país",
-        "label": "Digite e selecione seu país",
-        "placeholder": "Brasil, EUA, México, etc",
-        "required": "O país é obrigatório"
-      },
-      "userState": {
-        "title": "Seu estado/província",
-        "label": "Digite e selecione seu estado",
-        "placeholder": "Califórnia, Texas, etc",
-        "required": "O estado/província é obrigatório"
-      },
-      "userCity": {
-        "title": "Sua cidade",
-        "label": "Digite e selecione sua cidade",
-        "placeholder": "São Paulo, Nova York, etc",
-        "required": "A cidade é obrigatória"
-      },
-      "userQuote": {
-        "title": "Sua citação",
-        "label": "Digite sua citação",
-        "placeholder": "Eu amo Rollers Hub!"
-      },
-      "userBiography": {
-        "title": "Sua biografia",
-        "label": "Digite sua biografia",
-        "placeholder": "Sou um patinador profissional!"
-      },
-      "userPhone": {
-        "title": "Seu número de telefone",
-        "label": "Apenas números são permitidos",
-        "placeholder": "11999999999",
-        "required": "O número de telefone é obrigatório"
-      },
-      "userSocialMedia": {
-        "title": "Suas redes sociais",
-        "label": "Digite o link para suas redes sociais",
-        "placeholder": "https://instagram.com/@usuario",
-        "required": "As redes sociais são obrigatórias",
-        "invalid": "As redes sociais devem ser uma URL"
-      },
-      "userCategory": {
-        "title": "Suas categorias",
-        "label": "Digite e selecione suas categorias",
-        "placeholder": "Wizard, Downhill, Velocidade, etc.",
-        "required": "As categorias são obrigatórias"
-      },
-      "userLevel": {
-        "title": "Seu nível",
-        "label": "Digite e selecione seu nível",
-        "placeholder": "Iniciante, Intermediário, etc.",
-        "required": "O nível é obrigatório",
-        "levels": {
-          "beginner": "Iniciante",
-          "intermediate": "Intermediário",
-          "advanced": "Avançado",
-          "expert": "Especialista",
-          "master": "Mestre",
-          "professional": "Profissional"
-        }
-      },
-      "userExperience": {
-        "title": "Sua experiência",
-        "label": "Digite e selecione sua experiência",
-        "placeholder": "Iniciante, Intermediário, etc.",
-        "required": "A experiência é obrigatória",
-        "experiences": {
-          "beginner": "Iniciante",
-          "intermediate": "Intermediário",
-          "advanced": "Avançado",
-          "expert": "Especialista",
-          "master": "Mestre",
-          "professional": "Profissional"
-        }
-      },
-      "userSkills": {
-        "title": "Suas habilidades",
-        "label": "Digite e selecione suas habilidades",
-        "placeholder": "Iniciante, Intermediário, etc.",
-        "required": "As habilidades são obrigatórias",
-        "skills": {
-          "beginner": "Iniciante",
-          "intermediate": "Intermediário",
-          "advanced": "Avançado",
-          "expert": "Especialista",
-          "master": "Mestre",
-          "professional": "Profissional"
-        }
-      },
-      "startedAt": {
-        "title": "Início na Patinação",
-        "label": "Selecione quando você começou a patinar",
-        "required": "O início na patinação é obrigatório"
-      },
-      "submitProfile": "Completar Perfil",
-      "helpWithImages": "Ajuda com links de imagens",
-      "hasError": "Erro na validação do formulário",
-      "tryAgainLater": "Ocorreu um erro ao salvar o perfil. Por favor, tente novamente mais tarde."
-    }
-  }
-},
-"completeProfile": {
-  "h1": "Você ainda não completou seu perfil",
-  "p1": "Você deve completar seu perfil para ter acesso aos recursos de grupo, evento e lugar. Você pode editá-lo posteriormente.",
-  "p2": "Seja um parceiro ou patrocinador. E tenha acesso aos lançamentos e recursos mais recentes. Nós apenas criaremos e compartilharemos conteúdo relevante para você.",
-  "p3": "Clique no botão abaixo para completar seu perfil.",
-  "link": "Completar seu perfil",
-  "linkKnowMore": {
-    "text": "Saiba mais sobre parceiros e patrocinadores",
-    "about": "about"
-  }
-},
-"formCompletion": {
-  "user": {
-    "h1": "Parabéns, você acabou de completar seu perfil!",
-    "p1": "Agora você pode começar a usar o Rollers Hub! Crie ou siga grupos, acompanhe eventos e lugares, compartilhe com seus amigos e familiares. Não compartilhamos suas informações sensíveis com terceiros.",
-    "p2": "Estamos constantemente trabalhando para trazer a melhor experiência para todos.",
-    "p3": "Seja um parceiro ou patrocinador. E tenha acesso aos lançamentos e recursos mais recentes. Nós apenas criaremos e compartilharemos conteúdo relevante para você.",
-    "link": "Clique aqui para ver seu perfil",
-    "linkKnowMore": {
-      "text": "Saiba mais sobre parceiros e patrocinadores",
-      "about": "about"
-    }
+  "technologiesAndTools": {
+    "id": "tecnologias-y-herramientas",
+    "title": "Tecnologías y Herramientas",
+    "description": "Algunas de las herramientas con las que he trabajado",
+    "list": [
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Nest.js",
+      "Docker",
+      "Docker Compose",
+      "PostgreSQL",
+      "MySQL",
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Flowbite",
+      "HTML",
+      "CSS",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Cypress",
+      "Jest"
+    ]
   },
-  "group": {
-    "h1": "Parabéns, você acabou de completar seu grupo!",
-    "p1": "As pessoas podem seguir seu grupo e compartilhá-lo com seus amigos e familiares. Não compartilhamos suas informações sensíveis com terceiros.",
-    "p2": "Ao criar um novo evento, os seguidores do seu grupo serão notificados por e-mail.",
-    "p3": "Seja um parceiro ou patrocinador. E tenha acesso aos lançamentos e recursos mais recentes. Nós apenas criaremos e compartilharemos conteúdo relevante para você.",
-    "link": "Clique aqui para ver seu grupo",
-    "linkKnowMore": {
-      "text": "Saiba mais sobre parceiros e patrocinadores",
-      "about": "about"
-    }
+  "otherTechnologies": {
+    "id": "otras-tecnologias",
+    "title": "Otras Tecnologías",
+    "list": [
+      "PHP",
+      "Laravel",
+      "GraphQL",
+      "Apollo",
+      "Jira",
+      "Confluence",
+      "Gitflow",
+      "MongoDB",
+      "React Native",
+      "Figma"
+    ]
   },
-  "event": {
-    "h1": "Parabéns, você acabou de completar seu evento!",
-    "p1": "As pessoas podem procurar seu evento e compartilhá-lo com seus amigos e familiares. Não compartilhamos suas informações sensíveis com terceiros.",
-    "p2": "Ao criar um novo evento, os seguidores do seu grupo serão notificados por e-mail.",
-    "p3": "Seja um parceiro ou patrocinador. E tenha acesso aos lançamentos e recursos mais recentes. Nós apenas criaremos e compartilharemos conteúdo relevante para você.",
-    "link": "Clique aqui para ver seu evento",
-    "linkKnowMore": {
-      "text": "Saiba mais sobre parceiros e patrocinadores",
-      "about": "about"
-    }
-  },
-  "place": {
-    "h1": "Parabéns, você acabou de completar seu lugar!",
-    "p1": "As pessoas podem procurar seu lugar e compartilhá-lo com seus amigos e familiares. Não compartilhamos suas informações sensíveis com terceiros.",
-    "p2": "Ao criar um novo evento, os seguidores do seu grupo serão notificados por e-mail.",
-    "p3": "Seja um parceiro ou patrocinador. E tenha acesso aos lançamentos e recursos mais recentes. Nós apenas criaremos e compartilharemos conteúdo relevante para você.",
-    "link": "Clique aqui para ver seu lugar",
-    "linkKnowMore": {
-      "text": "Saiba mais sobre parceiros e patrocinadores",
-      "about": "about"
-    }
+  "contacts": {
+    "id": "contactos",
+    "title": "Contactos",
+    "description": "Mis contactos y redes sociales",
+    "email": "hugoleonardo.dev@gmail.com",
+    "phone": "+5531999699361",
+    "linkedin": "https://www.linkedin.com/in/hugo-leonardo-1b94592b1/",
+    "github": "https://github.com/hugoleonardodev"
   }
-},
-"footer": {
-  "nav": {
-    "home": "Início",
-    "groups": "Grupos",
-    "events": "Eventos",
-    "places": "Lugares",
-    "news": "Notícias",
-    "login": "Login",
-    "register": "Cadastrar",
-    "logout": "Sair",
-    "store": "Loja",
-    "blog": "Blog",
-    "about": "Sobre",
-    "jobs": "Vagas",
-    "announcements": "Anúncios",
-    "contact": "Contato"
-  },
-  "chats": {
-    "title": "Chats Oficiais",
-    "all": "Todos",
-    "brazil": "Brasil",
-    "argentina": "Argentina",
-    "colombia": "Colômbia",
-    "uruguay": "Uruguai",
-    "peru": "Peru",
-    "mexico": "México",
-    "canada": "Canadá",
-    "chile": "Chile",
-    "usa": "EUA",
-    "portugal": "Portugal",
-    "spain": "Espanha",
-    "france": "França",
-    "germany": "Alemanha",
-    "united-kingdom": "Reino Unido",
-    "united-states": "Estados Unidos",
-    "italy": "Itália",
-    "netherlands": "Países Baixos",
-    "austria": "Áustria",
-    "switzerland": "Suíça",
-    "belgium": "Bélgica",
-    "nigeria": "Nigéria",
-    "poland": "Polônia",
-    "ireland": "Irlanda",
-    "finland": "Finlândia",
-    "denmark": "Dinamarca",
-    "sweden": "Suécia",
-    "norway": "Noruega",
-    "iceland": "Islândia",
-    "czech-republic": "República Tcheca",
-    "hungary": "Hungria",
-    "slovakia": "Eslováquia",
-    "slovenia": "Eslovênia",
-    "croatia": "Croácia",
-    "serbia": "Sérvia",
-    "greece": "Grécia",
-    "bulgaria": "Bulgária",
-    "moldova": "Moldávia",
-    "latvia": "Letônia",
-    "liechtenstein": "Liechtenstein",
-    "lithuania": "Lituânia",
-    "estonia": "Estônia",
-    "albania": "Albânia",
-    "malta": "Malta",
-    "cyprus": "Chipre",
-    "monaco": "Mônaco",
-    "new-zealand": "Nova Zelândia",
-    "australia": "Austrália",
-    "fiji": "Fiji",
-    "philippines": "Filipinas",
-    "india": "Índia",
-    "indonesia": "Indonésia",
-    "china": "China",
-    "japan": "Japão",
-    "korea": "Coreia do Sul",
-    "thailand": "Tailândia",
-    "vietnam": "Vietnã",
-    "taiwan": "Taiwan",
-    "singapore": "Singapura"
-  }
-}
 }

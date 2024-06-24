@@ -5,12 +5,16 @@
       "href": "#sobre-mim"
     },
     {
+      "title": "Projetos Pessoais",
+      "href": "#projetos-pessoais"
+    },
+    {
       "title": "Experiências Profissionais",
       "href": "#experiencias-profissionais"
     },
     {
-      "title": "Projetos Pessoais",
-      "href": "#projetos-pessoais"
+      "title": "Tecnologias e Ferramentas",
+      "href": "#tecnologias-e-ferramentas"
     },
     {
       "title": "Contatos",
@@ -23,17 +27,31 @@
     "name": "Hugo Leonardo",
     "description": "Full Stack Developer",
     "hello": "Olá,",
-    "p1": "Meu nome é Hugo Leonardo e sou Desenvolvedor Full Stack de Belo Horizonte, Brasil. Desde 2020, trabalho como desenvolvedor web com um forte foco em desenvolvimento frontend. Liderei uma equipe de três desenvolvedores frontend, um testador e um designer, onde construímos com sucesso um novo produto e mantivemos um existente. Nosso trabalho envolvia um planejamento meticuloso e definição de prioridades usando grooming de backlog no início de cada sprint. Documentávamos tudo no Confluence e rastreávamos tarefas com Jira e Gitflow. Durante meu período, conseguimos eliminar todos os bugs na aplicação existente, permitindo entregar um novo módulo para estudantes em tempo recorde. Esse papel aprimorou muito minhas habilidades de gestão de projetos e equipes.",
+    "p1": "Meu nome é Hugo Leonardo e sou Desenvolvedor Full Stack de Belo Horizonte, Brasil. Desde 2020, trabalho como desenvolvedor web com um forte foco em desenvolvimento frontend. Liderei uma equipe de três desenvolvedores frontend, um testador e um designer, onde construímos com sucesso um novo produto e mantivemos um existente. Nosso trabalho envolvia um planejamento meticuloso e definição de prioridades usando backlog grooming no início de cada sprint. Documentávamos tudo no Confluence e rastreávamos tarefas com Jira e Gitflow. Durante meu período, conseguimos eliminar todos os bugs na aplicação existente, permitindo entregar um novo módulo para estudantes em tempo recorde. Esse papel aprimorou muito minhas habilidades de gestão de projetos e equipes.",
     "p2": "Nos últimos dois anos, trabalhei em uma empresa americana atendendo um cliente no setor fiduciário, um campo complexo que envolve questões de segurança nacional. Inicialmente, foquei na automação de testes usando Cypress e jQuery, o que foi muito motivador. No entanto, quando meu papel mudou para testes manuais, isso deixou de alinhar com minhas aspirações de carreira como programador. Após uma consideração cuidadosa, decidi buscar novas oportunidades.",
-    "p3": "Recentemente, dediquei vários meses a um projeto pessoal full stack. Como patinador nas horas vagas, percebi a falta de um site de qualidade para a comunidade de patinadores. A maioria dos sites disponíveis eram mal projetados ou apenas lojas online. Isso me levou a criar o Rollers Hub, uma aplicação destinada a conectar patinadores em todo o mundo. Desenvolvido com o apoio de uma comunidade de patinadores, continuo aprimorando o site com novas funcionalidades no meu tempo livre.",
+    "p3": "Recentemente, dediquei alguns meses a um projeto pessoal full stack. Como patinador nas horas vagas, percebi a falta de um site de qualidade para a comunidade de patinadores. A maioria dos sites disponíveis eram mal projetados ou apenas lojas online. Isso me levou a criar o Rollers Hub, uma aplicação destinada a conectar patinadores em todo o mundo. Desenvolvido com o apoio de uma comunidade de patinadores, continuo aprimorando o site com novas funcionalidades no meu tempo livre.",
     "p4": "Atualmente, estou buscando uma posição como desenvolvedor web full stack onde eu possa aplicar minhas habilidades e continuar crescendo profissionalmente. Tenho um interesse especial pela [Nome da Empresa] porque [razão específica relacionada à empresa ou função]. Estou confiante de que minha experiência em liderança de equipe, automação de testes e desenvolvimento full stack me torna um forte candidato para esta posição. Estou animado para trabalhar com vocês e ansioso para me juntar à sua equipe!",
     "p5": "Obrigado pela consideração. Estou ansioso pela possibilidade de discutir como posso contribuir para a sua equipe.",
     "regards": "Atenciosamente,",
     "signature": "Hugo Leonardo - Desenvolvedor Full Stack"
   },
+  "personalProjects": {
+    "id": "projetos-pessoais",
+    "title": "Projetos pessoais",
+    "description": "Algumas das minhas ideias de projetos pessoais",
+    "projects": [
+      {
+        "title": "Rollers Hub",
+        "description": "Uma aplicação destinada a conectar patinadores em todo o mundo.",
+        "link": "https://www.rollershub.com",
+        "thumbnail": "/assets/en-home-thumb-resized.png"
+      }
+    ]
+  },
   "workingExperiences": {
     "id": "experiencias-profissionais",
     "title": "Experiências Profissionais",
+    "description": "Minhas experiências mais recentes",
     "experiences": [
       {
         "company": "Xgrow",
@@ -76,23 +94,10 @@
       }
     ]
   },
-  "personalProjects": {
-    "id": "projetos-pessoais",
-    "title": "Projetos Pessoais",
-    "description": "Algumas das minhas ideias de projetos pessoais.",
-    "projects": [
-      {
-        "title": "Rollers Hub",
-        "description": "Uma aplicação destinada a conectar patinadores em todo o mundo.",
-        "link": "https://www.rollershub.com",
-        "thumbnail": "/assets/en-home-thumb-resized.png"
-      }
-    ]
-  },
   "technologiesAndTools": {
     "id": "tecnologias-e-ferramentas",
     "title": "Tecnologias e Ferramentas",
-    "description": "Algumas das minhas habilidades.",
+    "description": "Algumas das ferramentas com quais já trabalhei",
     "list": [
       "JavaScript",
       "TypeScript",
